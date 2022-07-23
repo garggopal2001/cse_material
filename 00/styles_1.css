@@ -12559,7 +12559,7 @@ html {
 
 /* <HEAD> */
 
-.head {
+.head{
   color: white;
   text-decoration: none;
 }
@@ -12568,15 +12568,30 @@ html {
 
 /* <FRONT LINKS> */
 
-.icon_size {
+.links_bond {
+  border: .15rem solid #222629;
+}
+
+.links_icon{
+  margin: 0.5rem;
+}
+
+.links_name{
+  font-weight: bolder;
+  font-family: "Trirong", serif;
+}
+
+.icon_size{
+  color: #222629;
   height: auto;
+  width: auto;
 }
 
 /* </ERONT LINKS> */
 
 /* <FRONT SEM> */
 
-.sem_img_f {
+.sem_img_f{
   border: 0.3rem solid #222629;
   border-radius: 0.5rem;
 }
@@ -12593,17 +12608,22 @@ html {
 
 /* <BACK>  */
 
-.back_text {
+.back_text{
   font-size: 1.5rem;
 }
 
-._but {
+._but{
   font-size: 1.25rem;
   font-weight: bolder;
   margin-top: 0.5rem;
 }
 
-.sem_img_b {
+.links_img{
+  border: 0.3rem solid #222629;
+  border-radius: 0.5rem;
+}
+
+.sem_img_b{
   height: 15rem;
   width: 15rem;
   border: 0.3rem solid #222629;
@@ -12612,13 +12632,13 @@ html {
 
 /* </BACK>  */
 
-.about {
+.about{
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
 
-.foot_icon {
+.foot_icon{
   height: 2.5rem;
   width: 2.5rem;
 }
