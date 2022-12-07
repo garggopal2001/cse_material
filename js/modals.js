@@ -1562,7 +1562,7 @@ const modalsdata = [
             {
                 name: `Lec_Spr_22 Prof. SM`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNlAzWcvxlchgnDWCKeIwMo`
+                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNtPW9Myt9otRVQHmuM4nh8`
             }
         ],
         but_2: [
