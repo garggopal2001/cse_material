@@ -85,7 +85,7 @@ const semestersdata = [
             `Database Management Systems Laboratory`,
             `Computer Networks`,
             `Networks Laboratory`,
-            `Depth Elective-II`
+            `Deep Learning`
         ]
     }
 ]

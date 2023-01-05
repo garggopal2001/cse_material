@@ -1407,8 +1407,12 @@ const modalsdata = [
         code: `CS31202`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Mainack Mondal`,
+                link: `https://cse.iitkgp.ac.in/~mainack/`
+            },
+            {
+                name: `Saptarshi Ghosh`,
+                link: `https://sites.google.com/site/saptarshighosh/`
             }
         ],
         but_1: [
@@ -1423,6 +1427,11 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLjSFIV2WJbpyz756lW-vKWjzi9VXgSTT1`
             },
             {
+                name: `Web_Spr_22`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~mainack/courses/2021-spring/OS-course/index.html`
+            },
+            {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNMv72nvIy1sHnyIHgnN1cx`
@@ -1430,9 +1439,9 @@ const modalsdata = [
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Web_Spr_23`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~mainack/courses/2022-spring/OS-course/index.html`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Ej-Nu3UWAXRHguqrCtAcCtsBaQgPtj3-E7muDAjpxyn4LQ?e=1CRWmO`
@@ -1445,8 +1454,12 @@ const modalsdata = [
         code: `CS39002`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Mainack Mondal`,
+                link: `https://cse.iitkgp.ac.in/~mainack/`
+            },
+            {
+                name: `Saptarshi Ghosh`,
+                link: `https://sites.google.com/site/saptarshighosh/`
             }
         ],
         but_1: [
@@ -1454,13 +1467,18 @@ const modalsdata = [
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~mainack/courses/2020-spring/OS-course/index.html`
+            },
+            {
+                name: `Web_Spr_22`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~mainack/courses/2021-spring/OS-course/index.html`
             }
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Web_Spr_23`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~mainack/courses/2022-spring/OS-course/index.html`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/ElvT69xXHJxGv_dpBslwxjoBH6sTWmODk-3A8L5RgkvV-g?e=hwsJ2p`
@@ -1473,8 +1491,12 @@ const modalsdata = [
         code: `CS30202`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Krothapalli Sreenivasa Rao`,
+                link: `https://cse.iitkgp.ac.in/~ksrao/`
+            },
+            {
+                name: `Pabitra Mitra`,
+                link: `http://cse.iitkgp.ac.in/~pabitra/`
             }
         ],
         but_1: [
@@ -1511,8 +1533,12 @@ const modalsdata = [
         code: `CS39202`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Krothapalli Sreenivasa Rao`,
+                link: `https://cse.iitkgp.ac.in/~ksrao/`
+            },
+            {
+                name: `Pabitra Mitra`,
+                link: `http://cse.iitkgp.ac.in/~pabitra/`
             }
         ],
         but_1: [
@@ -1544,20 +1570,24 @@ const modalsdata = [
         code: `CS31204`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Arobinda Gupta`,
+                link: `http://cse.iitkgp.ac.in/~agupta/`
+            },
+            {
+                name: `Sudip Misra`,
+                link: `https://cse.iitkgp.ac.in/~smisra/`
             }
         ],
         but_1: [
             {
-                name: `Networks_Lec_Spr_21`,
-                icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLjSFIV2WJbpx05eUgx9915IGezCv9wMHF`
-            },
-            {
                 name: `Lec_Spr_22 Prof. AG`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtN3Z2lQH4CpM_vaKFr41oGI`
+            },
+            {
+                name: `Web_Spr_22 Prof. SM`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~smisra/course/cn.html`
             },
             {
                 name: `Lec_Spr_22 Prof. SM`,
@@ -1567,9 +1597,9 @@ const modalsdata = [
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Web_Spr_23 Prof. AG`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~agupta/networks/`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EiEX7c7uA6dIqLOZ4Yh80hMBVS-x4bnNFq5LKB9uAT6kBA?e=xEbHj4`
@@ -1582,8 +1612,12 @@ const modalsdata = [
         code: `CS39006`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Arobinda Gupta`,
+                link: `http://cse.iitkgp.ac.in/~agupta/`
+            },
+            {
+                name: `Sudip Misra`,
+                link: `https://cse.iitkgp.ac.in/~smisra/`
             }
         ],
         but_1: [
@@ -1591,6 +1625,11 @@ const modalsdata = [
                 name: `Lec_Spr_22 Prof. AG`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtONEcGM1qFbn7vDfkCDn59z`
+            },
+            {
+                name: `Web_Spr_22 Prof. SM`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~smisra/course/cnlabs.html`
             },
             {
                 name: `Lec_Spr_22 Prof. SM`,
@@ -1609,21 +1648,21 @@ const modalsdata = [
     },
     // SEM06 M7
     {
-        name: `Depth Elective-II`,
+        name: `Deep Learning`,
         id: `sem06Modal7`,
         img: `06/7`,
-        code: `CS30202`,
+        code: `CS60010`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Sudeshna Sarkar`,
+                link: `http://cse.iitkgp.ac.in/~sudeshna/`
             }
         ],
         but_1: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Lec_Spr_22`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMNU42VobghL-gvIi9dnrDl`
             }
         ],
         but_2: [
@@ -1747,7 +1786,7 @@ linkmodalDiv.innerHTML =
                             <a href="http://kgpmoodlenew.iitkgp.ac.in/moodle/login/index.php" target="_blank" title="Moodle for Non-CSE Courses">
                                 <button class="btn btn-primary _but">KGP Moodle</button>
                             </a>
-                            <a href="https://docs.google.com/document/d/1aq7aWjOTEnO338IhHO4woZHirxj1xG5R4H2O6ZDiSRM/edit" target="_blank" title="CSE Courses lectures and webpages Batch 2019">
+                            <a href="https://docs.google.com/document/d/1aq7aWjOTEnO338IhHO4woZHirxj1xG5R4H2O6ZDiSRM/edit#heading=h.usm4xzbocfq6" target="_blank" title="CSE Courses lectures and webpages Batch 2019">
                                 <button class="btn btn-primary _but">CSE Courses Batch 19</button>
                             </a>
                             <a href="https://www.youtube.com/channel/UCO0mrEUTWadrky_B--FsPCQ" target="_blank" title="CSE Courses Lectures Batch 2019">
