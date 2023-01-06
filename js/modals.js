@@ -1673,6 +1673,33 @@ const modalsdata = [
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EliLzsMysgdAjJnQ0th2UxIBLnBJrmojqFa_-dLPnSllJQ?e=QRUTtw`
+    },
+    {
+        name: `Information Retrieval`,
+        id: `sem06Modal8`,
+        img: `06/8`,
+        code: `CS60092`,
+        prof_b: [
+            {
+                name: `Somak Aditya`,
+                link: `https://adityasomak.github.io/`
+            }
+        ],
+        but_1: [
+            {
+                name: `Lec_Spr_22`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtP8YyzC9JaEQWE7BrK6fju4`
+            }
+        ],
+        but_2: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnzA6HuELoVDhQGKBUE-F5EBujIZrqhA7_thl7NHC_xsrA?e=5UrfA1`
     }
 ]
 
