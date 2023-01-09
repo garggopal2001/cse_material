@@ -555,6 +555,11 @@ const modalsdata = [
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fjfaJWNZG5jFXxNH-UVpQwM`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=415`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EqVJiHMGShpBq8cwvozDHQYBGjlO8bqw2WnzLQ831ZNFFg?e=jPIeUk`
@@ -627,6 +632,11 @@ const modalsdata = [
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fiulSmpgyp0qD-olJ89AvGR`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=411`
             },
             {
                 name: `Anubhav Notes`,
@@ -853,6 +863,11 @@ const modalsdata = [
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fi55A_aRtxlqtxzoHu_7Jg7`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=449`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuA8mFTDmp9DgKeo5cXczzEBwHKYHwp7r63cpt9XgMEvJg?e=1KViuc`
@@ -897,6 +912,11 @@ const modalsdata = [
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fjMmCzzPwAwT6VU-EuzhC-C`
             },
             {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=454`
+            },
+            {
                 name: `Anubhav Notes`,
                 icon: `fa-solid fa-pen-to-square`,
                 link: `https://drive.google.com/file/d/1ZwN3MZTgOloQWAJjvkQ2rLYsfPKjziUk/view?usp=drivesdk`
@@ -931,6 +951,11 @@ const modalsdata = [
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fi4ixsxIxpQTm5mAcNGB6dM`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=455`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EvMujdfpXXJCrHxMK1LA78gBBxFuhp44ZQnYSwuhz5Q_og?e=fr5CAj`
@@ -1177,6 +1202,11 @@ const modalsdata = [
                 name: `Web_Aut_22`,
                 icon: `fa-solid fa-file-lines`,
                 link: `http://cse.iitkgp.ac.in/~abhij/course/theory/Algo2/Autumn22/`
+            },
+            {
+                name: `Anubhav Notes`,
+                icon: `fa-solid fa-pen-to-square`,
+                link: `https://drive.google.com/file/d/1muzCWY3CtE8LGw35EjvayLJ3wuMi0LGo/view?usp=share_link`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eu6U34xZlRpHuquQ0pSAMiABoeqvzE9aNfh5uD-9n5onlA?e=EHlbhJ`
@@ -1214,6 +1244,11 @@ const modalsdata = [
                 name: `Moodle`,
                 icon: `fa-solid fa-display`,
                 link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=485`
+            },
+            {
+                name: `Anubhav Notes`,
+                icon: `fa-solid fa-pen-to-square`,
+                link: `https://drive.google.com/file/d/1rRsy-nOBLHjmX7QssksY5y0kXdMETvBg/view?usp=share_link`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EpPC5CMfRFREmZDkWE9eLdEBtTu_A84Ar1V5fPw0SNHHgg?e=RhQqoJ`
@@ -1289,6 +1324,11 @@ const modalsdata = [
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~wbcm/cgi-bin/wbcm/common/course/home.cgi?ccode=cs31007&year=2022&sem=a`
             },
+            {
+                name: `Anubhav Notes`,
+                icon: `fa-solid fa-pen-to-square`,
+                link: `https://drive.google.com/file/d/1cW5znT6tDnoka3f4f4kvdiZXTLhIFbdt/view?usp=share_link`
+            }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/ErxvM5BlQvFKpEW71LW0YOwBOpceICgcrU5bkahx6jZZ0A?e=ZyslBC`
     },
@@ -1518,9 +1558,9 @@ const modalsdata = [
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Web_Spr_23`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~pabitra/course/dbms/dbms_new.html`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EhyvCtEOYoxJlbhlVfeEuS8B03PrWF-z1M7CUrNhtpRhsg?e=YKM6jH`
@@ -1555,9 +1595,9 @@ const modalsdata = [
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Web_Spr_23`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~pabitra/course/dbms/dbms_new.html`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eo2AmIsb3AJBppvpZqck8rsBwBa0ehLp_6oA0No2aH9bkA?e=kc3t4c`
@@ -1639,9 +1679,9 @@ const modalsdata = [
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=517`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eiwlcs7SBCNJrNNAlZ90zjABTR63GaId-W5Xlm1wdAnOAw?e=2X0pQp`
@@ -1667,9 +1707,9 @@ const modalsdata = [
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Online Sessions`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://youtube.com/playlist?list=PLUfABYNel-fjajhvgA7GCUgRJadjBQ3ZD`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EliLzsMysgdAjJnQ0th2UxIBLnBJrmojqFa_-dLPnSllJQ?e=QRUTtw`
