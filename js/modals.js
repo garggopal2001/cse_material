@@ -1519,6 +1519,16 @@ const modalsdata = [
                 name: `Web_Spr_23`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~mainack/courses/2022-spring/OS-course/index.html`
+            },
+            {
+                name: `Lab Sessions`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://youtube.com/playlist?list=PLUfABYNel-fiBufnqvcTo6OxPoAaDC9v7`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=521`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/ElvT69xXHJxGv_dpBslwxjoBH6sTWmODk-3A8L5RgkvV-g?e=hwsJ2p`
@@ -1640,6 +1650,11 @@ const modalsdata = [
                 name: `Web_Spr_23 Prof. AG`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~agupta/networks/`
+            },
+            {
+                name: `Web_Spr_23 Prof. SM`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~smisra/course/cn_aut23.html`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EiEX7c7uA6dIqLOZ4Yh80hMBVS-x4bnNFq5LKB9uAT6kBA?e=xEbHj4`
