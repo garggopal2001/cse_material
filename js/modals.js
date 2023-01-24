@@ -1608,6 +1608,11 @@ const modalsdata = [
                 name: `Web_Spr_23`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~pabitra/course/dbms/dbms_new.html`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=520`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eo2AmIsb3AJBppvpZqck8rsBwBa0ehLp_6oA0No2aH9bkA?e=kc3t4c`
