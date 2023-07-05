@@ -1,4 +1,4 @@
-# [CSE Material (2020)](https://garggopal2001.github.io/cse_material/)
+# [CSE 2020](https://garggopal2001.github.io/cse_material/)
 This Website contains All Academic Material of Batch 2020 (Covid Batch ;)) and Useful Links for the Core Subjects of the Department of [Computer Science and Engineering](http://cse.iitkgp.ac.in/), [IIT Kharagpur](http://www.iitkgp.ac.in/).
 <br/><br/>
 ### Template details:
