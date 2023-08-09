@@ -1734,6 +1734,7 @@ const modalsdata = [
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EliLzsMysgdAjJnQ0th2UxIBLnBJrmojqFa_-dLPnSllJQ?e=QRUTtw`
     },
+    // SEM06 M8
     {
         name: `Information Retrieval`,
         id: `sem06Modal8`,
@@ -1760,7 +1761,175 @@ const modalsdata = [
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnzA6HuELoVDhQGKBUE-F5EBujIZrqhA7_thl7NHC_xsrA?e=5UrfA1`
-    }
+    },
+    // SEM07 M1
+    {
+        name: `Object Oriented Systems`,
+        id: `sem07Modal1`,
+        img: `07/1`,
+        code: `CS60059`,
+        prof_b: [
+            {
+                name: ``,
+                link: ``
+            }
+        ],
+        but_1: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        but_2: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        mat_b: ``
+    },
+    // SEM07 M2
+    {
+        name: `Theory and Applications of Blockchain`,
+        id: `sem07Modal2`,
+        img: `07/2`,
+        code: `CS61065`,
+        prof_b: [
+            {
+                name: ``,
+                link: ``
+            }
+        ],
+        but_1: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        but_2: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        mat_b: ``
+    },
+    // SEM07 M3
+    {
+        name: `Artificial Intelligence for Economics`,
+        id: `sem07Modal3`,
+        img: `07/3`,
+        code: `AI60003`,
+        prof_b: [
+            {
+                name: ``,
+                link: ``
+            }
+        ],
+        but_1: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        but_2: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        mat_b: ``
+    },
+    // SEM07 M4
+    {
+        name: `Intercltural Communication`,
+        id: `sem07Modal4`,
+        img: `07/4`,
+        code: `HS30036`,
+        prof_b: [
+            {
+                name: ``,
+                link: ``
+            }
+        ],
+        but_1: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        but_2: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        mat_b: ``
+    },
+    // SEM07 M5
+    {
+        name: `Frugal Engineering`,
+        id: `sem07Modal5`,
+        img: `07/5`,
+        code: `EP60044`,
+        prof_b: [
+            {
+                name: ``,
+                link: ``
+            }
+        ],
+        but_1: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        but_2: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        mat_b: ``
+    },
+    // SEM07 M2
+    {
+        name: `BTP01`,
+        id: `sem07Modal6`,
+        img: `07/6`,
+        code: `PPD5`,
+        prof_b: [
+            {
+                name: ``,
+                link: ``
+            }
+        ],
+        but_1: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        but_2: [
+            {
+                name: ``,
+                icon: ``,
+                link: ``
+            }
+        ],
+        mat_b: ``
+    },
 ]
 
 // Courses Modal

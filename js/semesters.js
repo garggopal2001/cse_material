@@ -88,7 +88,19 @@ const semestersdata = [
             `DE-Deep Learning`,
             `DE-Information Retrieval`
         ]
-    }
+    },
+    {
+        name: `Semester 07 (Aut 2023)`,
+        id: `sem07`,
+        courses: [
+            `DE-Object Oriented Systems`,
+            `DE-Theory and Applications of Blockchain`,
+            `BE-Artificial Intelligence for Economics`,
+            `BE-Intercultural Communication`,
+            `BE-Frugal Engineering`,
+            `BTP01 PPD5`
+        ]
+    },
 ]
 
 // Semesters HTML
