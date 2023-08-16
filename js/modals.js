@@ -1770,25 +1770,25 @@ const modalsdata = [
         code: `CS60059`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Rajib Mall`,
+                link: `https://www.iitkgp.ac.in/department/CS/faculty/cs-rajib`
             }
         ],
         but_1: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `NPTEL Lec (Prof. RM)`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://archive.nptel.ac.in/courses/106/105/106105224/`
             }
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=534`
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eh2puwNr1nZEiNRqLzepEYYBKLO4lvZItKA8pK7IIfRRow?e=49UNay`
     },
     // SEM07 M2
     {
@@ -1798,15 +1798,20 @@ const modalsdata = [
         code: `CS61065`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Sandip Chakraborty`,
+                link: `https://cse.iitkgp.ac.in/~sandipc/`
             }
         ],
         but_1: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Nptel Lec (Prof. SC & Prof. SS)`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://archive.nptel.ac.in/courses/106/105/106105235/`
+            },
+            {
+                name: `Lec_Aut_21`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PL_qVBOSlZLkKP_Ql4cIlllb74di0w7pVf`
             }
         ],
         but_2: [
@@ -1816,7 +1821,7 @@ const modalsdata = [
                 link: ``
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EteVw2aM2xJHpN6Ifw6qXtUB5Tpqt2fOPOLA60mdzQvTtA?e=kILnOo`
     },
     // SEM07 M3
     {
@@ -1826,15 +1831,23 @@ const modalsdata = [
         code: `AI60003`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Dripto Bakshi`,
+                link: `https://www.iitkgp.ac.in/department/HS/faculty/hs-dripto`
+            },
+            {
+                name: `Palash Dey`,
+                link: `https://cse.iitkgp.ac.in/~palash/`
+            },
+            {
+                name: `Adway Mitra`,
+                link: `https://www.iitkgp.ac.in/department/AI/faculty/ai-adway`
             }
         ],
         but_1: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Lec_Aut_21`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PL4AVR1di7EiV_9Ij7b4WwwW68vSgFoTGM`
             }
         ],
         but_2: [
@@ -1844,7 +1857,7 @@ const modalsdata = [
                 link: ``
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eofka2T7tGRHrvjclaRHRYUBNf8gjZ9i1PiyMREr9VABDg?e=AxjsMx`
     },
     // SEM07 M4
     {
@@ -1854,8 +1867,8 @@ const modalsdata = [
         code: `HS30036`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Vijai Nath Giri`,
+                link: `https://www.iitkgp.ac.in/department/HS/faculty/hs-vng`
             }
         ],
         but_1: [
@@ -1872,7 +1885,7 @@ const modalsdata = [
                 link: ``
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Ejak_y42k_ZBmP7fM232pJgBvjiE8ISg6hyP71M27PY0YQ?e=IDRdV3`
     },
     // SEM07 M5
     {
@@ -1882,8 +1895,8 @@ const modalsdata = [
         code: `EP60044`,
         prof_b: [
             {
-                name: ``,
-                link: ``
+                name: `Pranab K Dan`,
+                link: `http://www.see.iitkgp.ac.in/team-view/p-k-dan-2/`
             }
         ],
         but_1: [
@@ -1900,9 +1913,9 @@ const modalsdata = [
                 link: ``
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuMqTv-3YOJBveDQ4R0_UBABJjZT5VC9E3YgiBdgeb0Fsw?e=617Ab0`
     },
-    // SEM07 M2
+    // SEM07 M6
     {
         name: `BTP01`,
         id: `sem07Modal6`,
@@ -1928,7 +1941,7 @@ const modalsdata = [
                 link: ``
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EsGlMyjlxxRNgmM89vfmgVMBp-CUfYu8_sCqczrKR2CjVQ?e=2hggrx`
     },
 ]
 
