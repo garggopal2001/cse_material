@@ -98,7 +98,7 @@ const semestersdata = [
             `BE-Artificial Intelligence for Economics`,
             `BE-Intercultural Communication`,
             `BE-Frugal Engineering`,
-            `BTP01 PPD5`
+            // `BTP01 PPD5`
         ]
     },
 ]

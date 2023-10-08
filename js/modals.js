@@ -1816,9 +1816,14 @@ const modalsdata = [
         ],
         but_2: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Web_Aut_23`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~sandipc/courses/cs61065/cs61065.html`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=557`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EteVw2aM2xJHpN6Ifw6qXtUB5Tpqt2fOPOLA60mdzQvTtA?e=kILnOo`
@@ -1835,12 +1840,12 @@ const modalsdata = [
                 link: `https://www.iitkgp.ac.in/department/HS/faculty/hs-dripto`
             },
             {
-                name: `Palash Dey`,
-                link: `https://cse.iitkgp.ac.in/~palash/`
-            },
-            {
                 name: `Adway Mitra`,
                 link: `https://www.iitkgp.ac.in/department/AI/faculty/ai-adway`
+            },
+            {
+                name: `Palash Dey`,
+                link: `https://cse.iitkgp.ac.in/~palash/`
             }
         ],
         but_1: [
@@ -1916,33 +1921,33 @@ const modalsdata = [
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuMqTv-3YOJBveDQ4R0_UBABJjZT5VC9E3YgiBdgeb0Fsw?e=617Ab0`
     },
     // SEM07 M6
-    {
-        name: `BTP01`,
-        id: `sem07Modal6`,
-        img: `07/6`,
-        code: `PPD5`,
-        prof_b: [
-            {
-                name: ``,
-                link: ``
-            }
-        ],
-        but_1: [
-            {
-                name: ``,
-                icon: ``,
-                link: ``
-            }
-        ],
-        but_2: [
-            {
-                name: ``,
-                icon: ``,
-                link: ``
-            }
-        ],
-        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EsGlMyjlxxRNgmM89vfmgVMBp-CUfYu8_sCqczrKR2CjVQ?e=2hggrx`
-    },
+    // {
+    //     name: `BTP01`,
+    //     id: `sem07Modal6`,
+    //     img: `07/6`,
+    //     code: `PPD5`,
+    //     prof_b: [
+    //         {
+    //             name: ``,
+    //             link: ``
+    //         }
+    //     ],
+    //     but_1: [
+    //         {
+    //             name: ``,
+    //             icon: ``,
+    //             link: ``
+    //         }
+    //     ],
+    //     but_2: [
+    //         {
+    //             name: ``,
+    //             icon: ``,
+    //             link: ``
+    //         }
+    //     ],
+    //     mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EsGlMyjlxxRNgmM89vfmgVMBp-CUfYu8_sCqczrKR2CjVQ?e=2hggrx`
+    // },
 ]
 
 // Courses Modal
