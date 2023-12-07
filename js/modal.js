@@ -1,4 +1,4 @@
-const modalsdata = [
+const modal_data = [
     // SEM01 M1
     {
         name: `Advanced Calculus`,
@@ -11,14 +11,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/MA/faculty/ma-cnahak`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `NPTEL Lec (Prof. JK)`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLbRMhDVUMngeVrxtbBz-n8HvP8KAWBpI5`,
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Anubhav Notes`,
                 icon: `fa-solid fa-pen-to-square`,
@@ -51,14 +51,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/ES/faculty/es-sreeraj`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Channel`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/channel/UCeWJRb61WvPzRTFN2UsScgg`,
             }
         ],
-        but_2: [],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnjwKZxbaQ9IglZ2TVI7EiIBhIVqdgqMf2SlxXeYP_tBpA?e=9aKJKp`
     },
     // SEM01 M3
@@ -73,14 +73,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/PH/faculty/ph-ang`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `NPTEL Lec (Prof. SB)`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLoRUNeJAicqa1GgkIsUOKP-VN93rUTqbZ`,
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Lec_Aut_20`,
                 icon: `fa-brands fa-youtube`,
@@ -101,8 +101,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/PH/faculty/ph-somnath`
             }
         ],
-        but_1: [],
-        but_2: [],
+        yel_b: [],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EtZITSiJ6M9Km23WHr-moDkBD5Kjl_7DHF0dlnzdbQMLtQ?e=sXUhAR`
     },
     // SEM01 M5
@@ -117,14 +117,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/EE/faculty/ee-alokkanti`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `NPTEL Lec (Prof. DD)`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLbRMhDVUMngfdEXVcdf_ijj2Eub-UHs_y`,
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Lec_Aut_20`,
                 icon: `fa-brands fa-youtube`,
@@ -145,8 +145,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/ME/faculty/me-atuljain`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Discussion Aut_20`,
                 icon: `fa-brands fa-youtube`,
@@ -176,8 +176,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/EE/faculty/ee-saurav.pramanik`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Aut_20`,
                 icon: `fa-brands fa-youtube`,
@@ -198,8 +198,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/CE/faculty/ce-bkdubey`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Aut_20`,
                 icon: `fa-brands fa-youtube`,
@@ -220,8 +220,8 @@ const modalsdata = [
                 link: `http://www.facweb.iitkgp.ac.in/~jkumar/`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Spr_21 (Prof. JK)`,
                 icon: `fa-brands fa-youtube`,
@@ -251,14 +251,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/CE/faculty/ce-sujit`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Tikle’s Academy`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/c/TIKLESACADEMY`
             }
         ],
-        but_2: [],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Ep03FrB5dSZDnUdx76lqf80BGveUxCpV3YAcygSwCoVvDQ?e=jdo3g1`
     },
     // SEM02 M3
@@ -273,7 +273,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~abhij/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `CodeWithHarry`,
                 icon: `fa-brands fa-youtube`,
@@ -300,7 +300,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~aritrah/course/theory/PDS/Autumn2020/`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -326,7 +326,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~pallab/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `VS Code`,
                 icon: `fa-solid fa-laptop-code`,
@@ -348,7 +348,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~aritrah/course/lab/PDS/Spring2021/`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_21_01`,
                 icon: `fa-solid fa-file-lines`,
@@ -377,8 +377,8 @@ const modalsdata = [
                 link: `http://www.chemistry.iitkgp.ac.in/~ndpradeep/ndps.html`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
@@ -407,8 +407,8 @@ const modalsdata = [
                 link: `http://www.chemistry.iitkgp.ac.in/~ndpradeep/ndps.html`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
@@ -433,8 +433,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/HS/faculty/hs-somdatta`
             }
         ],
-        but_1: [],
-        but_2: [],
+        yel_b: [],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EngZC4BAaLBIuQ8GdsYoe3kBWWY7wJtQz4f825sQ0w560w?e=eYmju6`
     },
     // SEM02 M8
@@ -449,14 +449,14 @@ const modalsdata = [
                 link: `https://iitkgpbioscience.weebly.com/dibyendu-samanta.html`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtN03ygBklEJucko5EDDRhM2`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
@@ -481,7 +481,7 @@ const modalsdata = [
                 link: `https://buddhanandabanerje.wixsite.com/website`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
@@ -493,7 +493,7 @@ const modalsdata = [
                 link: `https://drive.google.com/drive/folders/1veQlwVt8BFaIU5LFLatA8DjtYe2Gb2MP`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Lec_Aut_21 (Prof. BB)`,
                 icon: `fa-brands fa-youtube`,
@@ -528,7 +528,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~aritrah/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Aut_20`,
                 icon: `fa-solid fa-file-lines`,
@@ -540,7 +540,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtM7GIfInDNPpCcorL8m7tpk`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -580,7 +580,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~pawang/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `CodeWithHarry`,
                 icon: `fa-brands fa-youtube`,
@@ -622,7 +622,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~palash/Courses/2021Algorithms1-Theory/algo1-2021.html`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -662,14 +662,14 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~pawang/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Aut_20`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~pawang/courses/ALGO20.html`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -695,8 +695,8 @@ const modalsdata = [
                 link: `https://gduttaengg.wixsite.com/mysite`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
@@ -726,14 +726,14 @@ const modalsdata = [
                 link: `https://sites.google.com/site/dseniitkharagpur`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Virtual Labs`,
                 icon: `fa-solid fa-flask`,
                 link: `http://vlabs.iitkgp.ernet.in/be/`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
@@ -758,7 +758,7 @@ const modalsdata = [
                 link: `http://www.facweb.iitkgp.ac.in/~sanand/f_sanand.html`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `S&N Web_Aut_18`,
                 icon: `fa-solid fa-file-lines`,
@@ -775,7 +775,7 @@ const modalsdata = [
                 link: `http://www.facweb.iitkgp.ac.in/~avishek/Signals&Networks2020.html`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
@@ -805,7 +805,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~skolay/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -817,7 +817,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMnUJop1EeMSrr6rMYgfXzO`
             },
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_22`,
                 icon: `fa-solid fa-file-lines`,
@@ -852,8 +852,8 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~agupta/`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Web_Spr_22`,
                 icon: `fa-solid fa-file-lines`,
@@ -888,7 +888,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~sourangshu/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
@@ -900,7 +900,7 @@ const modalsdata = [
                 link: `https://drive.google.com/drive/folders/1UACEQlnKq_92fLfkvunpknb5iiRUPpyu`
             },
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_22`,
                 icon: `fa-soild fa-file-lines`,
@@ -940,8 +940,8 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~sourangshu/`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Web_Spr_22`,
                 icon: `fa-soild fa-file-lines`,
@@ -976,7 +976,7 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/CS/faculty/cs-chitta`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-soild fa-file-lines`,
@@ -988,7 +988,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMWTHBbKX0NAF-oTJcO50SE`
             },
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_22`,
                 icon: `fa-soild fa-file-lines`,
@@ -1023,7 +1023,7 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/CS/faculty/cs-chitta`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_20`,
                 icon: `fa-soild fa-file-lines`,
@@ -1035,7 +1035,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~wbcm/cgi-bin/wbcm/common/course/home.cgi?ccode=cs29002&year=2021&sem=s`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_22`,
                 icon: `fa-soild fa-file-lines`,
@@ -1061,8 +1061,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/HS/faculty/hs-jenia`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
@@ -1083,14 +1083,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/MA/faculty/ma-mpbiswal`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Extra Videos`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fhTTknZ1W5sHO8kkr97l2MK`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
@@ -1116,8 +1116,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/HS/faculty/hs-anubhab`
             }
         ],
-        but_1: [],
-        but_2: [],
+        yel_b: [],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuzL0ctGynRJqpRbWE54uDgBdsoYlpQ0ensyD_W7S7MD5A?e=jBL1AB`
     },
     // SEM04 M10
@@ -1132,8 +1132,8 @@ const modalsdata = [
                 link: `http://www.facweb.iitkgp.ac.in/~smsh/`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
@@ -1154,8 +1154,8 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/MA/faculty/ma-nitin.gupta`
             }
         ],
-        but_1: [],
-        but_2: [
+        yel_b: [],
+        blu_b: [
             {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
@@ -1180,7 +1180,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~agupta/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Aut_20`,
                 icon: `fa-solid fa-file-lines`,
@@ -1197,7 +1197,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMCvIrMguydfHjJnGkRkcum`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_22`,
                 icon: `fa-solid fa-file-lines`,
@@ -1227,14 +1227,14 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~bivasm/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtP5nseM6Sqc0g0M6DvD9LEk`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_22`,
                 icon: `fa-solid fa-file-lines`,
@@ -1269,14 +1269,14 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~bivasm/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtPH00XyivKmOWvDziVM51xy`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_22`,
                 icon: `fa-solid fa-file-lines`,
@@ -1306,14 +1306,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/CS/faculty/cs-chitta`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNaWFleQo2vv86Sr45NS2dD`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_22_PreMid`,
                 icon: `fa-solid fa-file-lines`,
@@ -1348,14 +1348,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/CS/faculty/cs-debdeep`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNNy0LWKIzZcUnjk_hW8lvJ`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Moodle`,
                 icon: `fa-solid fa-display`,
@@ -1377,7 +1377,7 @@ const modalsdata = [
                 link: `http://www.facweb.iitkgp.ac.in/~jay/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -1394,7 +1394,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNG0TaFG7hbcug3GEb5qWJr`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Moodle`,
                 icon: `fa-solid fa-display`,
@@ -1423,14 +1423,14 @@ const modalsdata = [
                 link: `http://www.iitkgp.ac.in/department/AT/faculty/at-ayantika`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtPyJqf9yxiD7C9Q7ugoXlxV`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Moodle`,
                 icon: `fa-solid fa-display`,
@@ -1455,7 +1455,7 @@ const modalsdata = [
                 link: `https://sites.google.com/site/saptarshighosh/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -1477,7 +1477,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNMv72nvIy1sHnyIHgnN1cx`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_23`,
                 icon: `fa-solid fa-file-lines`,
@@ -1502,7 +1502,7 @@ const modalsdata = [
                 link: `https://sites.google.com/site/saptarshighosh/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -1514,7 +1514,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~mainack/courses/2021-spring/OS-course/index.html`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_23`,
                 icon: `fa-solid fa-file-lines`,
@@ -1549,7 +1549,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~pabitra/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -1566,7 +1566,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtN6vg7nkn_HZrVLVIbn6GfD`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_23`,
                 icon: `fa-solid fa-file-lines`,
@@ -1591,7 +1591,7 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~pabitra/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Web_Spr_21`,
                 icon: `fa-solid fa-file-lines`,
@@ -1603,7 +1603,7 @@ const modalsdata = [
                 link: `http://www.facweb.iitkgp.ac.in/~shamik/spring2022/dbms/dbms2022.html`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_23`,
                 icon: `fa-solid fa-file-lines`,
@@ -1633,7 +1633,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~smisra/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Spr_22 Prof. AG`,
                 icon: `fa-brands fa-youtube`,
@@ -1650,7 +1650,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNtPW9Myt9otRVQHmuM4nh8`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Spr_23 Prof. AG`,
                 icon: `fa-solid fa-file-lines`,
@@ -1680,7 +1680,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~smisra/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Spr_22 Prof. AG`,
                 icon: `fa-brands fa-youtube`,
@@ -1697,7 +1697,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNlAzWcvxlchgnDWCKeIwMo`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Moodle`,
                 icon: `fa-solid fa-display`,
@@ -1718,14 +1718,14 @@ const modalsdata = [
                 link: `http://cse.iitkgp.ac.in/~sudeshna/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMNU42VobghL-gvIi9dnrDl`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Online Sessions`,
                 icon: `fa-brands fa-youtube`,
@@ -1746,14 +1746,14 @@ const modalsdata = [
                 link: `https://adityasomak.github.io/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Spr_22`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtP8YyzC9JaEQWE7BrK6fju4`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: ``,
                 icon: ``,
@@ -1774,14 +1774,14 @@ const modalsdata = [
                 link: `https://www.iitkgp.ac.in/department/CS/faculty/cs-rajib`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `NPTEL Lec (Prof. RM)`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://archive.nptel.ac.in/courses/106/105/106105224/`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Moodle`,
                 icon: `fa-solid fa-display`,
@@ -1802,7 +1802,7 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~sandipc/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Nptel Lec (Prof. SC & Prof. SS)`,
                 icon: `fa-brands fa-youtube`,
@@ -1814,7 +1814,7 @@ const modalsdata = [
                 link: `https://www.youtube.com/playlist?list=PL_qVBOSlZLkKP_Ql4cIlllb74di0w7pVf`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: `Web_Aut_23`,
                 icon: `fa-solid fa-file-lines`,
@@ -1848,14 +1848,14 @@ const modalsdata = [
                 link: `https://cse.iitkgp.ac.in/~palash/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://www.youtube.com/playlist?list=PL4AVR1di7EiV_9Ij7b4WwwW68vSgFoTGM`
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: ``,
                 icon: ``,
@@ -1876,14 +1876,14 @@ const modalsdata = [
                 link: `https://www.iitkgp.ac.in/department/HS/faculty/hs-vng`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: ``,
                 icon: ``,
                 link: ``
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: ``,
                 icon: ``,
@@ -1904,14 +1904,14 @@ const modalsdata = [
                 link: `http://www.see.iitkgp.ac.in/team-view/p-k-dan-2/`
             }
         ],
-        but_1: [
+        yel_b: [
             {
                 name: ``,
                 icon: ``,
                 link: ``
             }
         ],
-        but_2: [
+        blu_b: [
             {
                 name: ``,
                 icon: ``,
@@ -1919,71 +1919,42 @@ const modalsdata = [
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuMqTv-3YOJBveDQ4R0_UBABJjZT5VC9E3YgiBdgeb0Fsw?e=617Ab0`
-    },
-    // SEM07 M6
-    // {
-    //     name: `BTP01`,
-    //     id: `sem07Modal6`,
-    //     img: `07/6`,
-    //     code: `PPD5`,
-    //     prof_b: [
-    //         {
-    //             name: ``,
-    //             link: ``
-    //         }
-    //     ],
-    //     but_1: [
-    //         {
-    //             name: ``,
-    //             icon: ``,
-    //             link: ``
-    //         }
-    //     ],
-    //     but_2: [
-    //         {
-    //             name: ``,
-    //             icon: ``,
-    //             link: ``
-    //         }
-    //     ],
-    //     mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EsGlMyjlxxRNgmM89vfmgVMBp-CUfYu8_sCqczrKR2CjVQ?e=2hggrx`
-    // },
+    }
 ]
 
 // Courses Modal
-let modalDiv = document.getElementById(`modals`);
-modalDiv.innerHTML = ``;
-modalsdata.forEach((modal) => {
-    let prof_b = ``, but_1 = ``, but_2 = ``;
+let modal_html = document.getElementById(`modals`);
+modal_html.innerHTML = ``;
+modal_data.forEach((modal) => {
+    let prof_b = ``, yel_b = ``, blu_b = ``;
     // Professor Buttons
-    modal.prof_b.forEach((butp) => {
+    modal.prof_b.forEach((but_p) => {
         prof_b +=
-        `<a href="${butp.link}" target="_blank">
+        `<a href="${but_p.link}" target="_blank">
             <button class="btn btn-primary2 _but">
-                <i class="fas fa-user fa-fw"></i>${butp.name}
+                <i class="fas fa-user fa-fw"></i>${but_p.name}
             </button>
         </a>`
     });
     // Yellow Buttons
-    console.log(modal.but_1.length);
-    modal.but_1.forEach((but1) => {
-        but_1 +=
-        `<a href="${but1.link}" target="_blank">
+    modal.yel_b.forEach((but_yel) => {
+        yel_b +=
+        `<a href="${but_yel.link}" target="_blank">
             <button class="btn btn-warning _but">
-                <i class="fas ${but1.icon} fa-fw"></i>${but1.name}
+                <i class="fas ${but_yel.icon} fa-fw"></i>${but_yel.name}
             </button>
         </a>`
     });
-    // Last Buttons
-    modal.but_2.forEach((but2) => {
-        but_2 +=
-        `<a href="${but2.link}" target="_blank">
+    // Blue Buttons
+    modal.blu_b.forEach((but_blu) => {
+        blu_b +=
+        `<a href="${but_blu.link}" target="_blank">
             <button class="btn btn-info _but">
-                <i class="fas ${but2.icon} fa-fw"></i>${but2.name}
+                <i class="fas ${but_blu.icon} fa-fw"></i>${but_blu.name}
             </button>
         </a>`
     });
-    modalDiv.innerHTML +=
+    modal_html.innerHTML +=
     `<div class="portfolio-modal modal fade" id="${modal.id}" tabindex="-1" aria-labelledby="${modal.id}" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -2007,14 +1978,14 @@ modalsdata.forEach((modal) => {
                                 <!-- Protfolio Modal - Button -->
                                 ${prof_b}
                                 <br>
-                                ${but_1}
-                                ${but_1 == `` ? `` : `<br>`}
-                                ${but_2}
-                                ${but_2 == `` ? `` : `<br>`}
+                                ${yel_b}
+                                ${yel_b == `` ? `` : `<br>`}
+                                ${blu_b}
+                                ${blu_b == `` ? `` : `<br>`}
                                 <a href="${modal.mat_b}" target="_blank">
                                     <button class="btn btn-success _but">
                                         <i class="fas fa-solid fa-jet-fighter fa-fw"></i>Material
-                                        </button>
+                                    </button>
                                 </a>
                                 <button class="btn btn-danger _but" data-bs-dismiss="modal">
                                     <i class="fas fa-solid fa-circle-xmark fa-fw"></i>Close
@@ -2029,8 +2000,8 @@ modalsdata.forEach((modal) => {
 });
 
 // Link Modal
-let linkmodalDiv = document.getElementById(`linkmodal`);
-linkmodalDiv.innerHTML =
+let linkmodal_html = document.getElementById(`linkmodal`);
+linkmodal_html.innerHTML =
 `<div class="portfolio-modal modal fade" id="linksModal1" tabindex="-1" aria-labelledby="linksModal1" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
@@ -2093,17 +2064,11 @@ linkmodalDiv.innerHTML =
                             <a href="https://drive.google.com/folderview?id=0Bx7x8HmM7p_zM3VDMURfWWdvY28&resourcekey=0-4H4yE_Kxs1Dr61KH_3fxFw" target="_blank" title="CSE Notes by Anubhav Jain">
                                 <button class="btn btn-primary _but">Anubhav Jain Notes</button>
                             </a>
-                            <a href="https://drive.google.com/folderview?id=1Q1QNjSFZ-2y5h8GzLMqaEwwRjOB-e0Kb" target="_blank" title="EE Academic Material by Jogadenu Kalyan raman">
-                                <button class="btn btn-primary _but">EE Material by JKR</button>
-                            </a>
-                            <a href="https://ircell.iitkgp.ac.in/" target="_blank" title="International Relations Cell">
-                                <button class="btn btn-primary _but">IR Cell</button>
-                            </a>
                             <a href="https://www.youtube.com/playlist?list=PLauivoElc3gh3RCiQA82MDI-gJfXQQVnn" target="_blank" title="C++ STL Playlist by Luv">
                                 <button class="btn btn-primary _but">C++ STL Playlist</button>
                             </a>
                             <a href="https://www.topcoder.com/thrive/articles/Power%20up%20C++%20with%20the%20Standard%20Template%20Library%20Part%20One" target="_blank" title="C++ STL Tutorial by topcoder.com">
-                            <button class="btn btn-primary _but">C++ STL Topcoder</button>
+                                <button class="btn btn-primary _but">C++ STL Topcoder</button>
                             </a>
                             <a href="https://www.youtube.com/playlist?list=PLauivoElc3ggagradg8MfOZreCMmXMmJ-" target="_blank" title="CP/DSA Playlist by Luv">
                                 <button class="btn btn-primary _but">CP/DSA Playlist</button>

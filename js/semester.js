@@ -1,4 +1,4 @@
-const semestersdata = [
+const sem_data = [
     {
         name: `Links`,
         id: `links`,
@@ -97,35 +97,34 @@ const semestersdata = [
             `DE-Theory and Applications of Blockchain`,
             `BE-Artificial Intelligence for Economics`,
             `BE-Intercultural Communication`,
-            `BE-Frugal Engineering`,
-            // `BTP01 PPD5`
+            `BE-Frugal Engineering`
         ]
     },
 ]
 
 // Semesters HTML
-let semesterDiv = document.getElementById(`semesters`);
-semesterDiv.innerHTML = ``;
-semestersdata.forEach((semester, index) => {
+let sem_html = document.getElementById(`semesters`);
+sem_html.innerHTML = ``;
+sem_data.forEach((semester, index) => {
     let courses = ``;
     // Semester Items
     semester.courses.forEach((course, index) => {
         courses +=
             `<div class="col-md-6 col-lg-2 mb-4">
-            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#${semester.id}Modal${index + 1}">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#${semester.id}Modal${index + 1}">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <!-- Course Image -->
+                    <img class="img-fluid sem_img_f" src="assets/img/${semester.id}/${index + 1}.png" alt="..." />
                 </div>
-                <!-- Course Image -->
-                <img class="img-fluid sem_img_f" src="assets/img/${semester.id}/${index + 1}.png" alt="..." />
-            </div>
-            <!-- Course Name -->
-            <div class="text-center sub_name"><span>${course}</span></div>
-        </div>`;
+                <!-- Course Name -->
+                <div class="text-center sub_name"><span>${course}</span></div>
+            </div>`;
     })
-    semesterDiv.innerHTML +=
-        // Semester
-        `${index == 0 ? `` : `<hr>`}
+    sem_html.innerHTML +=
+    // Semester
+    `${index == 0 ? `` : `<hr>`}
     <section class="page-section py-5 portfolio" id=${semester.id}>
         <div class="container">
             <h1 class="text-center text-secondary mb-0">${semester.name}</h1>
@@ -137,7 +136,7 @@ semestersdata.forEach((semester, index) => {
             </div>
             <!-- Sem03 Grid Items-->
             <div class="row justify-content-center">
-            ${courses}
+                ${courses}
             </div>
         </div>
     </section>`;
