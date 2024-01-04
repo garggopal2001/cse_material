@@ -1416,7 +1416,7 @@ const modal_data = [
             },
             {
                 name: `Jiaul Hoque Paik`,
-                link: `http://www.cet.iitkgp.ac.in/prof/2`
+                link: `https://jiaul.github.io/`
             },
             {
                 name: `Ayantika Chatterjee`,
@@ -1753,13 +1753,7 @@ const modal_data = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtP8YyzC9JaEQWE7BrK6fju4`
             }
         ],
-        blu_b: [
-            {
-                name: ``,
-                icon: ``,
-                link: ``
-            }
-        ],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnzA6HuELoVDhQGKBUE-F5EBujIZrqhA7_thl7NHC_xsrA?e=5UrfA1`
     },
     // SEM07 M1
@@ -1855,13 +1849,7 @@ const modal_data = [
                 link: `https://www.youtube.com/playlist?list=PL4AVR1di7EiV_9Ij7b4WwwW68vSgFoTGM`
             }
         ],
-        blu_b: [
-            {
-                name: ``,
-                icon: ``,
-                link: ``
-            }
-        ],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eofka2T7tGRHrvjclaRHRYUBNf8gjZ9i1PiyMREr9VABDg?e=AxjsMx`
     },
     // SEM07 M4
@@ -1876,20 +1864,8 @@ const modal_data = [
                 link: `https://www.iitkgp.ac.in/department/HS/faculty/hs-vng`
             }
         ],
-        yel_b: [
-            {
-                name: ``,
-                icon: ``,
-                link: ``
-            }
-        ],
-        blu_b: [
-            {
-                name: ``,
-                icon: ``,
-                link: ``
-            }
-        ],
+        yel_b: [],
+        blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Ejak_y42k_ZBmP7fM232pJgBvjiE8ISg6hyP71M27PY0YQ?e=IDRdV3`
     },
     // SEM07 M5
@@ -1904,21 +1880,123 @@ const modal_data = [
                 link: `http://www.see.iitkgp.ac.in/team-view/p-k-dan-2/`
             }
         ],
+        yel_b: [],
+        blu_b: [],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuMqTv-3YOJBveDQ4R0_UBABJjZT5VC9E3YgiBdgeb0Fsw?e=617Ab0`
+    },
+    // SEM08 M1
+    {
+        name: `High Performance in Computer Architecture`,
+        id: `sem08Modal1`,
+        img: `08/1`,
+        code: `CS60003`,
+        prof_b: [
+            {
+                name: `Rajat Subhra Chakraborty`,
+                link: `https://www.iitkgp.ac.in/department/CS/faculty/cs-rschakraborty`
+            },
+            {
+                name: `Rajib Mall`,
+                link: `https://www.iitkgp.ac.in/department/CS/faculty/cs-rajib`
+            }
+        ],
         yel_b: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `NPTEL Lec (Prof. AP)`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://archive.nptel.ac.in/courses/106/105/106105033/`
             }
         ],
         blu_b: [
             {
-                name: ``,
-                icon: ``,
-                link: ``
+                name: `Moodel`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=565`
             }
         ],
-        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuMqTv-3YOJBveDQ4R0_UBABJjZT5VC9E3YgiBdgeb0Fsw?e=617Ab0`
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EpqSvCGMuQZLvoMRg9gfyzMBmVsh6Q3w8OErhLyFIVo53A?e=vrKeod`
+    },
+    // SEM08 M2
+    {
+        name: `Big Data Processing`,
+        id: `sem08Modal2`,
+        img: `08/2`,
+        code: `AI60004`,
+        prof_b: [
+            {
+                name: `Jiaul Hoque Paik`,
+                link: `https://jiaul.github.io/`
+            }
+        ],
+        yel_b: [
+            {
+                name: `Lec_Spr_22`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMxvFLBba-NyFRF1fsX4O0f`
+            }
+        ],
+        blu_b: [],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Er66oy0LPPJChhCpLOW9HRwBtSzY-bs4iaI1hM-87BhjxQ?e=U9GZPF`
+    },
+    // SEM08 M3
+    {
+        name: `Computational Biophysics: Algorithms to Applications`,
+        id: `sem08Modal3`,
+        img: `08/3`,
+        code: `CS61060`,
+        prof_b: [
+            {
+                name: `Pralay Mitra`,
+                link: `https://cse.iitkgp.ac.in/~pralay/`
+            }
+        ],
+        yel_b: [],
+        blu_b: [],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EhvL17r6S2dFodl1w8W36zkBLquwNQoiQXNFE651cZDd9w?e=FalMIl`
+    },
+    // SEM08 M4
+    {
+        name: `Hardware Security`,
+        id: `sem08Modal4`,
+        img: `08/4`,
+        code: `CS60004`,
+        prof_b: [
+            {
+                name: `Sarani Bhattacharya`,
+                link: `https://sites.google.com/view/drsaranibhattacharya/bio`
+            }
+        ],
+        yel_b: [
+            {
+                name: `NPTEL Lec (Prof. DM)`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://archive.nptel.ac.in/courses/106/105/106105194/`
+            }
+        ],
+        blu_b: [
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=584`
+            }
+        ],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EpCUJnG-SWtHrs16zNRdsHkB1-bxVAUC1C9rGvmpy1x-_w?e=8jewCl`
+    },
+    // SEM08 M5
+    {
+        name: `Engineering Design Process`,
+        id: `sem08Modal5`,
+        img: `08/5`,
+        code: `EP60042`,
+        prof_b: [
+            {
+                name: `Pranab K Dan`,
+                link: `http://www.see.iitkgp.ac.in/team-view/p-k-dan-2/`
+            }
+        ],
+        yel_b: [],
+        blu_b: [],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EqqnUyTTOOZFv84_1KmqrAUB8kvVQb0ZXOLRcHJQDK8T5g?e=i5t0L4`
     }
 ]
 

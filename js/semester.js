@@ -55,11 +55,11 @@ const sem_data = [
             `Software Engineering Laboratory`,
             `Switching Circuits and Logic Design`,
             `Switching Circuits Laboratory`,
-            `BE-Environmental Humanities`,
-            `BE-Operation Research`,
-            `BE-Econometric Analysis`,
-            `BE-Statistical Inference`,
-            `BE-Stochastic Processes and Applications`
+            `Environmental Humanities (BE)`,
+            `Operation Research (BE)`,
+            `Econometric Analysis (BE)`,
+            `Statistical Inference (BE)`,
+            `Stochastic Processes and Applications (BE)`
         ]
     },
     {
@@ -71,8 +71,8 @@ const sem_data = [
             `Compilers Laboratory`,
             `Computer Organization and Architecture`,
             `Computer Organization Laboratory`,
-            `DE-Machine Learning`,
-            `BE-Linear Algebra for AI and ML`
+            `Machine Learning (DE)`,
+            `Linear Algebra for AI and ML (BE)`
         ]
     },
     {
@@ -85,21 +85,32 @@ const sem_data = [
             `Database Management Systems Laboratory`,
             `Computer Networks`,
             `Networks Laboratory`,
-            `DE-Deep Learning`,
-            `DE-Information Retrieval`
+            `Deep Learning (DE)`,
+            `Information Retrieval (DE)`
         ]
     },
     {
         name: `Semester 07 (Aut 2023)`,
         id: `sem07`,
         courses: [
-            `DE-Object Oriented Systems`,
-            `DE-Theory and Applications of Blockchain`,
-            `BE-Artificial Intelligence for Economics`,
-            `BE-Intercultural Communication`,
-            `BE-Frugal Engineering`
+            `Object Oriented Systems (DE)`,
+            `Theory and Applications of Blockchain (DE)`,
+            `Artificial Intelligence for Economics (DE)`,
+            `Intercultural Communication (BE)`,
+            `Frugal Engineering (BE)`
         ]
     },
+    {
+        name: `Semester 08 (Spr 2024)`,
+        id: `sem08`,
+        courses: [
+            `High Performance in Computer Architecture`,
+            `Big Data Processing (DE)`,
+            `Computational Biophysics: Algorithms to Applications (DE)`,
+            `Hardware Security (DE)`,
+            `Engineering Design Process (BE)`
+        ]
+    }
 ]
 
 // Semesters HTML
