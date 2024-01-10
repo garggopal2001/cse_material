@@ -1935,7 +1935,13 @@ const modal_data = [
                 link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMxvFLBba-NyFRF1fsX4O0f`
             }
         ],
-        blu_b: [],
+        blu_b: [
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `http://kgpmoodlenew.iitkgp.ac.in/moodle/course/view.php?id=875`
+            }
+        ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Er66oy0LPPJChhCpLOW9HRwBtSzY-bs4iaI1hM-87BhjxQ?e=U9GZPF`
     },
     // SEM08 M3
@@ -1951,7 +1957,13 @@ const modal_data = [
             }
         ],
         yel_b: [],
-        blu_b: [],
+        blu_b: [
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=586`
+            }
+        ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EhvL17r6S2dFodl1w8W36zkBLquwNQoiQXNFE651cZDd9w?e=FalMIl`
     },
     // SEM08 M4
