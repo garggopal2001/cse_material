@@ -2066,6 +2066,11 @@ const modal_data = [
                 name: `Web_Aut_24`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~sourangshu/coursefiles/cs60021_2024a.html`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=17`
             }
         ],
         mat_b: ``
