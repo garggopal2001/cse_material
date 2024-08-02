@@ -2009,6 +2009,88 @@ const modal_data = [
         yel_b: [],
         blu_b: [],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EqqnUyTTOOZFv84_1KmqrAUB8kvVQb0ZXOLRcHJQDK8T5g?e=i5t0L4`
+    },
+    // SEM09 M1
+    {
+        name: `Social Computing`,
+        id: `sem09Modal1`,
+        img: `09/1`,
+        code: `CS60017`,
+        prof_b: [
+            {
+                name: `Saptarshi Ghosh`,
+                link: `https://sites.google.com/site/saptarshighosh/`
+            }
+        ],
+        yel_b: [
+            {
+                name: `Web_Aut_23`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://sites.google.com/view/cs60017/home`
+            }
+        ],
+        blu_b: [
+            {
+                name: `Web_Aut_24`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://sites.google.com/view/cs60017-2024/home`
+            }
+        ],
+        mat_b: ``
+    },
+    // SEM09 M2
+    {
+        name: `Scalable Data Mining`,
+        id: `sem09Modal2`,
+        img: `09/2`,
+        code: `CS60021`,
+        prof_b: [
+            {
+                name: `Sourangshu Bhattacharya`,
+                link: `https://cse.iitkgp.ac.in/~sourangshu/`
+            },
+            {
+                name: `Pabitra Mitra`,
+                link: `http://cse.iitkgp.ac.in/~pabitra/`
+            }
+        ],
+        yel_b: [
+            {
+                name: `Web_Aut_23`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://panuragreddy.github.io/SDM_2023/`
+            }
+        ],
+        blu_b: [
+            {
+                name: `Web_Aut_24`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~sourangshu/coursefiles/cs60021_2024a.html`
+            }
+        ],
+        mat_b: ``
+    },
+    // SEM09 M3
+    {
+        name: `Data Analytics`,
+        id: `sem09Modal3`,
+        img: `09/3`,
+        code: `CS610161`,
+        prof_b: [
+            {
+                name: `Abhijnan Chakraborty`,
+                link: `https://cse.iitkgp.ac.in/~abhijnan/`
+            }
+        ],
+        yel_b: [],
+        blu_b: [
+            {
+                name: `Web_Aut_24`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~abhijnan/data-analytics-2024.html`
+            }
+        ],
+        mat_b: ``
     }
 ]
 

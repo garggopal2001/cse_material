@@ -110,6 +110,15 @@ const sem_data = [
             `Hardware Security (DE)`,
             `Engineering Design Process (BE)`
         ]
+    },
+    {
+        name: 'Semester 09 (Aut 2024)',
+        id: `sem09`,
+        courses: [
+            `Social Computing (DE)`,
+            `Scalable Data Mining (DE)`,
+            `Data Analytics (DE)`
+        ]
     }
 ]
 
