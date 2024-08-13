@@ -2036,7 +2036,7 @@ const modal_data = [
                 link: `https://sites.google.com/view/cs60017-2024/home`
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EqxW7KjbYxFGrGmiAFBXzVEBvSZQEGVe17joWyxAuMHkYA?e=GcGgy0`
     },
     // SEM09 M2
     {
@@ -2073,7 +2073,7 @@ const modal_data = [
                 link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=17`
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/Eg9hKsRUmdBBt9CiVhOr3s8B80vt_xWBtdm1TtRW3tmopg?e=AKWhNV`
     },
     // SEM09 M3
     {
@@ -2095,7 +2095,7 @@ const modal_data = [
                 link: `https://cse.iitkgp.ac.in/~abhijnan/data-analytics-2024.html`
             }
         ],
-        mat_b: ``
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EtwU56zZyFVMlYuByU37P_cBZ7E4pBw149MibpTY2dj_CA?e=4HXM1Q`
     }
 ]
 
