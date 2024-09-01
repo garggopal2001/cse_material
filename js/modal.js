@@ -450,11 +450,11 @@ const modal_data = [
             }
         ],
         yel_b: [
-            {
-                name: `Lec_Spr_22`,
-                icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtN03ygBklEJucko5EDDRhM2`
-            }
+            // {
+            //     name: `Lec_Spr_22`,
+            //     icon: `fa-brands fa-youtube`,
+            //     link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtN03ygBklEJucko5EDDRhM2`
+            // }
         ],
         blu_b: [
             {
@@ -483,9 +483,9 @@ const modal_data = [
         ],
         yel_b: [
             {
-                name: `Lec_Spr_21`,
+                name: `Lec_Spr_21 (Prof. SK)`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtOzeZ1hh8wEDDikK2M2U90b`
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fjaNs9EL3nYZUHNFBFb213o`
             },
             {
                 name: `Formula PDFs`,
@@ -495,14 +495,14 @@ const modal_data = [
         ],
         blu_b: [
             {
-                name: `Lec_Aut_21 (Prof. BB)`,
-                icon: `fa-brands fa-youtube`,
-                link: `https://youtube.com/playlist?list=PLUfABYNel-fixcX3G2kxpE20zkkqr5lGd`
-            },
-            {
                 name: `Lec_Aut_21 (Prof. SRK)`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fgh8A2-3mSwEcOTfh10HjoB`
+            },
+            {
+                name: `Lec_Aut_21 (Prof. BB)`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://youtube.com/playlist?list=PLUfABYNel-fixcX3G2kxpE20zkkqr5lGd`
             },
             {
                 name: `Anubhav Notes`,
@@ -892,7 +892,7 @@ const modal_data = [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtPwlY4S79FhvO6ZRE6uc8F0`
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fggOnaSG_5yhykema2cWLQ7`
             },
             {
                 name: `PPD Sir Slides`,
@@ -985,8 +985,8 @@ const modal_data = [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMWTHBbKX0NAF-oTJcO50SE`
-            },
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fi9SuywjNvh9HwUOgPScILx`
+            }
         ],
         blu_b: [
             {
@@ -1231,7 +1231,7 @@ const modal_data = [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtP5nseM6Sqc0g0M6DvD9LEk`
+                link: `https://youtube.com/playlist?list=PLUfABYNel-fgf1C_7kwiRO4uqRi79h8h5&si=LaytclFFw7mAuEVR`
             }
         ],
         blu_b: [
@@ -2034,6 +2034,11 @@ const modal_data = [
                 name: `Web_Aut_24`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://sites.google.com/view/cs60017-2024/home`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=35`
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EqxW7KjbYxFGrGmiAFBXzVEBvSZQEGVe17joWyxAuMHkYA?e=GcGgy0`
