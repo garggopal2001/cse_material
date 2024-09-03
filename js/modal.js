@@ -1310,7 +1310,7 @@ const modal_data = [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNaWFleQo2vv86Sr45NS2dD`
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fhVE6ilnKuazTseZmxqj7HI`
             }
         ],
         blu_b: [
@@ -1386,12 +1386,12 @@ const modal_data = [
             {
                 name: `Lec_Spr_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtOlC0QUteMgYRl3hvrkgfuc`
+                link: `https://youtube.com/playlist?list=PLUfABYNel-fiJKjMY84vi6NxKInqvEHBE`
             },
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNG0TaFG7hbcug3GEb5qWJr`
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fiYd_7uxBB6sGaR4oR_FoA4`
             }
         ],
         blu_b: [
