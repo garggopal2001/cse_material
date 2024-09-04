@@ -533,11 +533,6 @@ const modal_data = [
                 name: `Web_Aut_20`,
                 icon: `fa-solid fa-file-lines`,
                 link: `https://cse.iitkgp.ac.in/~abhij/course/theory/DS/Autumn20/`
-            },
-            {
-                name: `Lec_Aut_20`,
-                icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtM7GIfInDNPpCcorL8m7tpk`
             }
         ],
         blu_b: [
@@ -552,7 +547,7 @@ const modal_data = [
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fgxYnvoadbfGF9EM2HlmCnm`
             },
             {
-                name: `Lec_Aut_21`,
+                name: `Lec_Aut_21_20`,
                 icon: `fa-brands fa-youtube`,
                 link: `https://youtube.com/playlist?list=PLUfABYNel-fjfaJWNZG5jFXxNH-UVpQwM`
             },
@@ -614,7 +609,7 @@ const modal_data = [
             {
                 name: `Lec_Aut_20`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtMMJ5LduRv3TMo3DmuShUaT`
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fiT97ajDdwl6ClgtgId9xy8`
             },
             {
                 name: `Web_Spr_21`,
@@ -1273,7 +1268,7 @@ const modal_data = [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtPH00XyivKmOWvDziVM51xy`
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fj56VQmFnPvB3E5ERRVQO_n`
             }
         ],
         blu_b: [
@@ -1352,7 +1347,7 @@ const modal_data = [
             {
                 name: `Lec_Aut_21`,
                 icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtNNy0LWKIzZcUnjk_hW8lvJ`
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fi7Mt3kTm9xBs5v17b3QuiV`
             }
         ],
         blu_b: [
