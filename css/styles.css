@@ -12532,6 +12532,10 @@ html {
   color: #fff;
 }
 
+.footer_bg {
+  background-color: #4caf50;
+}
+
 .copyright {
   background-color: black;
 }
