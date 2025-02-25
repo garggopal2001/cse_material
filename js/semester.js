@@ -56,10 +56,7 @@ const sem_data = [
             `Switching Circuits and Logic Design`,
             `Switching Circuits Laboratory`,
             `Environmental Humanities (BE)`,
-            `Operation Research (BE)`,
-            `Econometric Analysis (BE)`,
-            `Statistical Inference (BE)`,
-            `Stochastic Processes and Applications (BE)`
+            `Operation Research (BE)`
         ]
     },
     {
@@ -85,8 +82,7 @@ const sem_data = [
             `Database Management Systems Laboratory`,
             `Computer Networks`,
             `Networks Laboratory`,
-            `Deep Learning (DE)`,
-            `Information Retrieval (DE)`
+            `Deep Learning (DE)`
         ]
     },
     {
@@ -118,6 +114,30 @@ const sem_data = [
             `Social Computing (DE)`,
             `Scalable Data Mining (DE)`,
             `Data Analytics (DE)`
+        ]
+    },
+    {
+        name: 'Semester 10 (Spr 2025)',
+        id: `sem10`,
+        courses: [
+            `Natrual Language Processing (DE)`,
+            `Advanced Topics in Speech Processing (DE)`,
+        ]
+    },
+    {
+        name: `Other Depth Electives`,
+        id: `sem11`,
+        courses: [
+            `Information Retrieval`,
+        ]
+    },
+    {
+        name: `Other Breadth Electives`,
+        id: `sem12`,
+        courses: [
+            `Econometric Analysis`,
+            `Statistical Inference`,
+            `Stochastic Processes and Applications`
         ]
     }
 ]

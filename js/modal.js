@@ -1099,66 +1099,6 @@ const modal_data = [
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EsPWJbnCe2xHmbLkMqdwZ8IBNzmJAveCtA0_3SIxDkDWkA?e=UJrypn`
     },
-    // SEM04 M9
-    {
-        name: `Econometric Analysis`,
-        id: `sem04Modal9`,
-        img: `04/9`,
-        code: `HS30033`,
-        prof_b: [
-            {
-                name: `Anubhab Pattanayak`,
-                link: `http://www.iitkgp.ac.in/department/HS/faculty/hs-anubhab`
-            }
-        ],
-        yel_b: [],
-        blu_b: [],
-        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuzL0ctGynRJqpRbWE54uDgBdsoYlpQ0ensyD_W7S7MD5A?e=jBL1AB`
-    },
-    // SEM04 M10
-    {
-        name: `Statistical Inference`,
-        id: `sem04Modal10`,
-        img: `04/10`,
-        code: `MA20008`,
-        prof_b: [
-            {
-                name: `Somesh Kumar`,
-                link: `http://www.facweb.iitkgp.ac.in/~smsh/`
-            }
-        ],
-        yel_b: [],
-        blu_b: [
-            {
-                name: `Lec_Spr_22`,
-                icon: `fa-brands fa-youtube`,
-                link: `https://youtube.com/playlist?list=PLUfABYNel-fieHlDkjpwVir36tjIaOkMm`
-            }
-        ],
-        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/ErZtV97zxvxGmfxQ6PHTcbwBHTSLOM2YN_ZzmoBGbmq02w?e=KOWezt`
-    },
-    // SEM04 M11
-    {
-        name: `Stochastic Processes and Applications`,
-        id: `sem04Modal11`,
-        img: `04/11`,
-        code: `MA20208`,
-        prof_b: [
-            {
-                name: `Nitin Gupta`,
-                link: `http://www.iitkgp.ac.in/department/MA/faculty/ma-nitin.gupta`
-            }
-        ],
-        yel_b: [],
-        blu_b: [
-            {
-                name: `Lec_Spr_22`,
-                icon: `fa-brands fa-youtube`,
-                link: `https://youtube.com/playlist?list=PLUfABYNel-fgTWQ7LGeY8_6--wgXyL0d1`
-            }
-        ],
-        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnJBGiHKmfJOvhzkDMraqncBuEd3QMD6fQzYJXC-aue4ww?e=Il7NSr`
-    },
     // SEM05 M1
     {
         name: `Algorithms-II`,
@@ -1536,7 +1476,7 @@ const modal_data = [
         code: `CS30202`,
         prof_b: [
             {
-                name: `Krothapalli Sreenivasa Rao`,
+                name: `KS Rao`,
                 link: `https://cse.iitkgp.ac.in/~ksrao/`
             },
             {
@@ -1578,7 +1518,7 @@ const modal_data = [
         code: `CS39202`,
         prof_b: [
             {
-                name: `Krothapalli Sreenivasa Rao`,
+                name: `KS Rao`,
                 link: `https://cse.iitkgp.ac.in/~ksrao/`
             },
             {
@@ -1733,28 +1673,6 @@ const modal_data = [
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EliLzsMysgdAjJnQ0th2UxIBLnBJrmojqFa_-dLPnSllJQ?e=QRUTtw`
-    },
-    // SEM06 M8
-    {
-        name: `Information Retrieval`,
-        id: `sem06Modal8`,
-        img: `06/8`,
-        code: `CS60092`,
-        prof_b: [
-            {
-                name: `Somak Aditya`,
-                link: `https://adityasomak.github.io/`
-            }
-        ],
-        yel_b: [
-            {
-                name: `Lec_Spr_22`,
-                icon: `fa-brands fa-youtube`,
-                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtP8YyzC9JaEQWE7BrK6fju4`
-            }
-        ],
-        blu_b: [],
-        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnzA6HuELoVDhQGKBUE-F5EBujIZrqhA7_thl7NHC_xsrA?e=5UrfA1`
     },
     // SEM07 M1
     {
@@ -2101,6 +2019,156 @@ const modal_data = [
             }
         ],
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EtwU56zZyFVMlYuByU37P_cBZ7E4pBw149MibpTY2dj_CA?e=4HXM1Q`
+    },
+    // SEM10 M1
+    {
+        name: `Natural Language Processing`,
+        id: `sem10Modal1`,
+        img: `10/1`,
+        code: `CS60075`,
+        prof_b: [
+            {
+                name: `Saptarshi Ghosh`,
+                link: `https://sites.google.com/site/saptarshighosh/`
+            }
+        ],
+        yel_b: [
+            {
+                name: `NPTEL Lec (Prof. PG)`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PLJJzI13YAXCHxbVgiFaSI88hj-mRSoMtI`
+            },
+            {
+                name: `Web_Spr_24`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://sites.google.com/view/nlp-cs60075/home`
+            }
+        ],
+        blu_b: [
+            {
+                name: `Web_Spr_25`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://sites.google.com/view/nlp25cs60075/`
+            },
+            {
+                name: `Moodle`,
+                icon: `fa-solid fa-display`,
+                link: `https://moodlecse.iitkgp.ac.in/moodle/course/view.php?id=59`
+            }
+        ],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/En3mJuuvyq1NhTt3Zg-21acB1XEFJJ9hr-YkBcC0zkkKhw?e=MOLhlh`
+    },
+    // SEM10 M2
+    {
+        name: `Advanced Topics in Speech Processing`,
+        id: `sem10Modal2`,
+        img: `10/2`,
+        code: `CS60116`,
+        prof_b: [
+            {
+                name: `KS Rao`,
+                link: `https://cse.iitkgp.ac.in/~ksrao/`
+            }
+        ],
+        yel_b: [
+            {
+                name: `Lectures (Prof. KS Rao)`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PLUfABYNel-fhZSLM4_aKbDh-eyJHNOTW6`
+            }
+        ],
+        blu_b: [
+            {
+                name: `Web_Spr_25`,
+                icon: `fa-solid fa-file-lines`,
+                link: `https://cse.iitkgp.ac.in/~ksrao/cou-atsp-2025.html`
+            }
+        ],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EghDQao1utBHoTK4X7V01VEBdM_FuE2KuEriaG3LgiqooA?e=v8w8LD`
+    },
+    // // // // Depth Electives // // // /
+    // DE M1
+    {
+        name: `Information Retrieval`,
+        id: `sem11Modal1`,
+        img: `11/1`,
+        code: `CS60092`,
+        prof_b: [
+            {
+                name: `Somak Aditya`,
+                link: `https://adityasomak.github.io/`
+            }
+        ],
+        yel_b: [
+            {
+                name: `Lec_Spr_22`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://www.youtube.com/playlist?list=PLO11h2zbAVtP8YyzC9JaEQWE7BrK6fju4`
+            }
+        ],
+        blu_b: [],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnzA6HuELoVDhQGKBUE-F5EBujIZrqhA7_thl7NHC_xsrA?e=5UrfA1`
+    },
+    // // // // Breath Electives // // // //
+    // BE M1
+    {
+        name: `Econometric Analysis`,
+        id: `sem12Modal1`,
+        img: `12/1`,
+        code: `HS30033`,
+        prof_b: [
+            {
+                name: `Anubhab Pattanayak`,
+                link: `http://www.iitkgp.ac.in/department/HS/faculty/hs-anubhab`
+            }
+        ],
+        yel_b: [],
+        blu_b: [],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EuzL0ctGynRJqpRbWE54uDgBdsoYlpQ0ensyD_W7S7MD5A?e=jBL1AB`
+    },
+    // BE M2
+    {
+        name: `Statistical Inference`,
+        id: `sem12Modal2`,
+        img: `12/2`,
+        code: `MA20008`,
+        prof_b: [
+            {
+                name: `Somesh Kumar`,
+                link: `http://www.facweb.iitkgp.ac.in/~smsh/`
+            }
+        ],
+        yel_b: [],
+        blu_b: [
+            {
+                name: `Lec_Spr_22`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://youtube.com/playlist?list=PLUfABYNel-fieHlDkjpwVir36tjIaOkMm`
+            }
+        ],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/ErZtV97zxvxGmfxQ6PHTcbwBHTSLOM2YN_ZzmoBGbmq02w?e=KOWezt`
+    },
+    // BE M3
+    {
+        name: `Stochastic Processes and Applications`,
+        id: `sem12Modal3`,
+        img: `12/3`,
+        code: `MA20208`,
+        prof_b: [
+            {
+                name: `Nitin Gupta`,
+                link: `http://www.iitkgp.ac.in/department/MA/faculty/ma-nitin.gupta`
+            }
+        ],
+        yel_b: [],
+        blu_b: [
+            {
+                name: `Lec_Spr_22`,
+                icon: `fa-brands fa-youtube`,
+                link: `https://youtube.com/playlist?list=PLUfABYNel-fgTWQ7LGeY8_6--wgXyL0d1`
+            }
+        ],
+        mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnJBGiHKmfJOvhzkDMraqncBuEd3QMD6fQzYJXC-aue4ww?e=Il7NSr`
     }
 ]
 
@@ -2146,7 +2214,7 @@ modal_data.forEach((modal) => {
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">${modal.name}</h2>
+                                <h2 class="portfolio-modal-title text-secondary mb-0">${modal.name}</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -2154,7 +2222,9 @@ modal_data.forEach((modal) => {
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid sem_img_b rounded" src="assets/img/sem${modal.img}.png" alt="..." />
+
+                                <!-- <img class="img-fluid sem_img_b rounded" src="assets/img/sem${modal.img}.png" alt="..." /> -->
+
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4 back_text">${modal.code}</p>
                                 <!-- Protfolio Modal - Button -->
