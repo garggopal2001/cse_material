@@ -2039,6 +2039,7 @@ const coursesData = [
         mat_b: `https://iitkgpacin-my.sharepoint.com/:f:/g/personal/garggopal2001_kgpian_iitkgp_ac_in/EnJBGiHKmfJOvhzkDMraqncBuEd3QMD6fQzYJXC-aue4ww?e=Il7NSr`
     }
 ];
+
 // Global variables to keep track of current state
 let currentSemester = null;
 let currentCourse = null;
@@ -2310,7 +2311,7 @@ function setupSearch() {
  * @param {string} query - The search query string.
  */
 function performSearch(query) {
-    const searchResultsDiv = document.getElementById('searchResults');
+    const searchResultsList = document.getElementById('searchResultsList'); // Target the new list container
     const noResultsMessage = document.getElementById('noSearchResults');
 
     // Filter courses based on query
@@ -2325,11 +2326,11 @@ function performSearch(query) {
 
     // Display results or no results message
     if (results.length === 0) {
-        searchResultsDiv.innerHTML = ''; // Clear previous results
+        searchResultsList.innerHTML = ''; // Clear previous results in the list container
         noResultsMessage.classList.remove('hidden'); // Show no results message
     } else {
         noResultsMessage.classList.add('hidden'); // Hide no results message
-        searchResultsDiv.innerHTML = `
+        searchResultsList.innerHTML = `
             <p style="margin-bottom: 1rem; color: var(--text-light);">
                 Found ${results.length} course(s) for "${query}"
             </p>
