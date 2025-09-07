@@ -5,127 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CSE 2020: Study materials and resources for Computer Science and Engineering, IIT Kharagpur." />
     <meta name="author" content="garggopal2001" />
-    <title>CSE 2020</title>
+
+    <title>CSE 2020 | IIT Kharagpur</title>
     <link rel="icon" type="image/x-icon" href="img/GG.png" />
+    
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Refined stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQK9TPGLNL"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-GQK9TPGLNL');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GQK9TPGLNL');
     </script>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <a href="#" class="logo" onclick="showHome()">
+
+    <header class="sticky-header">
+        <nav class="container nav-container">
+            <!-- Renders the logo and title, clicking it navigates home -->
+            <a href="#" class="logo" data-action="show-home" aria-label="Go to Homepage">
                 <i class="fas fa-graduation-cap"></i> CSE 2020
             </a>
+            <!-- Search input container -->
             <div class="search-container">
-                <input type="text" class="search-box" placeholder="Search courses by name or code..." id="searchInput">
+                <input type="text" class="search-box" placeholder="Search courses by name or code..." id="searchInput" aria-label="Search Courses">
                 <i class="fas fa-search search-icon"></i>
             </div>
         </nav>
     </header>
 
-    <main class="container">
-        <section class="hero">
-            <h1>CSE 2020</h1>
-            <h2>Computer Science and Engineering, IIT Kharagpur</h2>
-            <p>I would be grateful if you could take a moment to fill out feedback form.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSden1G9sySVuokDMkI-ARzznm0jVRnQsSUA46GA6xVGxfWiCQ/viewform?embedded=false" target="_blank" class="feedback-btn">
-                <i class="fas fa-comment-dots"></i> Give Feedback
-            </a>
-            <p class="access-note">
-                UsE YoUr InStItUtE AcCoUnT To AcCeSs MaTeRiAl LiNkS<br>(example@kgpian.iitkgp.ac.in)
-            </p>
-        </section>
+    <main class="container main-content">
 
-        <!-- Home Section: Displays semester selection -->
-        <section id="homeSection" class="content-section">
-            <h2 class="section-title">Select Your Semester</h2>
-            <div class="semester-grid" id="semesterGrid">
-                <!-- Semester buttons will be generated here by script.js -->
+        <!-- Home View: Displays hero, important links and all semester courses -->
+        <section id="homeView" class="view">
+            <!-- *** FIX: Moved hero section inside the home view *** -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>CSE 2020 Resources</h1>
+                    <h2>Computer Science &amp; Engineering, IIT Kharagpur</h2>
+                    <p>A curated collection of academic materials and useful links for the Batch of 2020.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSden1G9sySVuokDMkI-ARzznm0jVRnQsSUA46GA6xVGxfWiCQ/viewform?embedded=false" target="_blank" class="btn btn-accent">
+                        <i class="fas fa-comment-dots"></i> Give Feedback
+                    </a>
+                </div>
+            </section>
+
+            <div class="card important-links-card">
+                <h2 class="section-title"><i class="fas fa-external-link-alt"></i> Important Links</h2>
+                <div class="links-grid" id="linksGrid"></div>
             </div>
+            <div class="card" id="semestersContainer"></div>
         </section>
 
-        <!-- Courses Section: Displays courses for a selected semester -->
-        <section id="coursesSection" class="content-section hidden">
-            <button class="back-btn" onclick="showHome()">
-                <i class="fas fa-arrow-left"></i> Back to Semesters
+        <!-- Course Details View: Displays detailed information for a single course -->
+        <section id="courseDetailsView" class="view hidden">
+            <!-- Back button to navigate to the previous view -->
+            <button class="btn btn-secondary back-btn" data-action="go-back">
+                <i class="fas fa-arrow-left"></i> Back
             </button>
-            <h2 class="section-title" id="coursesTitle">Courses</h2>
-            <div class="course-grid" id="courseGrid">
-                <!-- Course cards will be generated here by script.js -->
-            </div>
+            <div id="courseDetailsContent" class="card"></div>
         </section>
 
-        <!-- Course Details Section: Displays detailed information for a selected course -->
-        <section id="courseDetailsSection" class="content-section hidden">
-            <button class="back-btn" onclick="showCourses()">
-                <i class="fas fa-arrow-left"></i> Back to Courses
-            </button>
-            <div id="courseDetailsContent">
-                <!-- Course details will be generated here by script.js -->
-            </div>
-        </section>
-
-        <!-- Search Results Section: Displays results from the search bar -->
-        <section id="searchResultsSection" class="content-section hidden">
-            <button class="back-btn" onclick="clearSearch()">
+        <!-- Search Results View: Displays courses matching the search query -->
+        <section id="searchResultsView" class="view hidden">
+            <!-- Back button to return to the home screen -->
+            <button class="btn btn-secondary back-btn" data-action="show-home">
                 <i class="fas fa-arrow-left"></i> Back to Home
             </button>
-            <h2 class="section-title">Search Results</h2>
-            <div id="searchResults">
-                <div id="searchResultsList">
-                    <!-- Search results will be generated here by script.js -->
-                </div>
-                <p id="noSearchResults" class="hidden" style="text-align: center; color: var(--text-light); font-size: 1.2rem; margin-top: 1rem;">No courses found for your search.</p>
+            <div id="searchResultsContent" class="card">
+                <h2 class="section-title" id="searchResultsTitle">Search Results</h2>
+                <div id="searchResultsList"></div>
+                <p id="noSearchResults" class="hidden">No courses found matching your search.</p>
             </div>
         </section>
+
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>ABOUT WEBSITE</h4>
-                    <p>This website contains academic material and useful links for the core subjects of the Department of <a class="about" href="http://cse.iitkgp.ac.in/" target="_blank">Computer Science and Engineering</a>, <a class="about" href="http://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a>, specifically curated for the <a class="about" href="img/2020_batch.png" target="_blank">batch 2020</a>.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>ABOUT ME</h4>
-                    <p>I'm <a class="about" href="http://cse.iitkgp.ac.in/~gopal/" target="_blank">Gopal</a>, a 2025 graduate student from the Department of Computer Science and Engineering at IIT Kharagpur, enrolled in its Dual Degree course.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>CONTACT</h4>
-                    <p>Feel free to reach out to me with any queries or suggestions.</p>
-                    <div class="social-links">
-                        <a class="social-btn" href="https://www.instagram.com/garggopal2001/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="social-btn" href="https://www.linkedin.com/in/garggopal2001/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="social-btn" href="https://github.com/garggopal2001" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+    <footer class="site-footer">
+        <div class="container footer-content-grid">
+            <div class="footer-section">
+                <h4>About this Site</h4>
+                <p>This website aggregates academic materials for the core subjects of the <a href="http://cse.iitkgp.ac.in/" target="_blank">CSE Department</a> at <a href="http://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a>, curated for the Batch of 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h4>About Me</h4>
+                <p>I'm <a href="http://cse.iitkgp.ac.in/~gopal/" target="_blank">Gopal</a>, a 2025 Dual Degree graduate from the CSE Department at IIT Kharagpur.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Feel free to reach out with any queries or suggestions.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/garggopal2001/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/garggopal2001/" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/garggopal2001" target="_blank" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Made with <span class="heart-icon"><i class="fa-solid fa-heart"></i></span> for Kgpians.</p>
-                <p>Developed with the assistance of Sonnet 4 and 2.5 Flash.</p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with <span class="heart-icon"><i class="fa-solid fa-heart"></i></span> for Kgpians</p>
+            <p class="dev-note">Developed with the assistance of Sonnet 4 and 2.5 Flash</p>
         </div>
     </footer>
 
-    <!-- Link to external JavaScript file -->
+    <!-- Button to scroll back to the top of the page -->
+    <button id="scrollTopBtn" class="scroll-to-top hidden" data-action="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- The main application script -->
     <script src="script.js"></script>
 </body>
 </html>

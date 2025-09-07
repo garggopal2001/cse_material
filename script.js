@@ -1,6 +1,265 @@
-// Course data
+/**
+ * @file Main JavaScript file for the CSE 2020 academic resources website.
+ * @description This script, architected as a self-contained module, handles all
+ * dynamic functionality of this single-page application (SPA). It follows
+ * modern clean code principles for maintainability and clarity.
+ * @author garggopal2001 (Refactored by Professional Developer)
+ * Date: September 7, 2025
+ */
+
+/**
+ * @module resourceApp
+ * @description The main application module, encapsulated in an IIFE (Immediately
+ * Invoked Function Expression) to prevent polluting the global namespace.
+ */
+const resourceApp = (() => {
+    // --- CONFIGURATION ---
+    // Centralized constants to avoid "magic strings" and for easy tweaking.
+    const config = {
+        views: {
+            HOME: 'homeView',
+            DETAILS: 'courseDetailsView',
+            SEARCH: 'searchResultsView',
+        },
+        debounceTime: 300, // ms to wait after user stops typing to search
+    };
+
+    // --- STATE MANAGEMENT ---
+    // A simple object to track the application's state.
+    const state = {
+        currentView: config.views.HOME,
+        previousView: null,
+        lastViewedSemesterId: null,
+    };
+
+    // --- DOM ELEMENT CACHING ---
+    // Caching elements on startup avoids costly, repetitive DOM queries.
+    const DOM = {
+        views: document.querySelectorAll('.view'),
+        linksGrid: document.getElementById('linksGrid'),
+        semestersContainer: document.getElementById('semestersContainer'),
+        courseDetailsContent: document.getElementById('courseDetailsContent'),
+        searchResultsList: document.getElementById('searchResultsList'),
+        searchResultsTitle: document.getElementById('searchResultsTitle'),
+        noSearchResults: document.getElementById('noSearchResults'),
+        searchInput: document.getElementById('searchInput'),
+        scrollTopBtn: document.getElementById('scrollTopBtn'),
+    };
+
+    // --- TEMPLATE GENERATION (HTML FACTORIES) ---
+    // Pure functions that take data objects and return HTML strings.
+
+    /** Uses destructuring for cleaner access to link properties. */
+    const createLinkCardHTML = ({ link, title, icon, name }) => `
+        <a href="${link}" target="_blank" class="link-card" title="${title}">
+            <i class="fas ${icon}"></i>
+            <span>${name}</span>
+        </a>`;
+
+    /** Uses destructuring for cleaner access to course properties. */
+    const createCourseCardHTML = ({ id, name, code }) => `
+        <button class="course-card" data-action="show-details" data-course-id="${id}" aria-label="View details for ${name}">
+            <span class="course-name">${name}</span>
+            <span class="course-code">${code}</span>
+        </button>`;
+
+    /** Uses destructuring for cleaner access to resource properties. */
+    const createResourceLinkHTML = ({ link, icon, name }) => `
+        <a href="${link}" target="_blank" class="resource-link">
+            <i class="${icon || 'fas fa-link'}"></i> ${name}
+        </a>`;
+
+    const createResourceSectionHTML = (title, icon, items) => {
+        if (!items || items.length === 0) return '';
+        return `
+            <div class="resource-section">
+                <h4><i class="fas ${icon}"></i> ${title}</h4>
+                <div class="resource-links">${items.map(createResourceLinkHTML).join('')}</div>
+            </div>`;
+    };
+
+    // --- RENDER FUNCTIONS ---
+    // These functions are responsible for updating the DOM.
+
+    const renderImportantLinks = () => {
+        DOM.linksGrid.innerHTML = importantLinksData.map(createLinkCardHTML).join('');
+    };
+
+    const renderHomepageCourses = () => {
+        const semesterGroups = coursesData.reduce((acc, course) => {
+            (acc[course.semester] = acc[course.semester] || []).push(course);
+            return acc;
+        }, {});
+
+        const allSemestersHTML = Object.entries(semesterGroups)
+            .sort(([semA], [semB]) => semA - semB) // Sort to ensure semesters are in order
+            .map(([semNum, courses]) => `
+                <div id="semester-section-${semNum}" class="semester-section">
+                    <h3 class="semester-title">${getSemesterTitle(semNum)}</h3>
+                    <div class="course-buttons-grid">${courses.map(createCourseCardHTML).join('')}</div>
+                </div>`
+            ).join('');
+        
+        DOM.semestersContainer.innerHTML = allSemestersHTML;
+    };
+
+    const renderCourseDetails = (courseId) => {
+        const course = coursesData.find(c => c.id === courseId);
+        if (!course) return showView(config.views.HOME);
+
+        state.lastViewedSemesterId = `semester-section-${course.semester}`;
+        
+        const { name, code, semester, prof_b, vid_b, web_b, not_b, tut_b, oth_b, mat_b } = course;
+
+        // More declarative way to build sections, making it easier to reorder or add new ones.
+        const resourceSections = [
+            { title: 'Professor(s)', icon: 'fa-user-tie', items: prof_b },
+            { title: 'Videos', icon: 'fa-video', items: vid_b },
+            { title: 'Webpages', icon: 'fa-globe', items: web_b },
+            { title: 'Notes', icon: 'fa-book', items: not_b },
+            { title: 'Tutorials', icon: 'fa-chalkboard-teacher', items: tut_b },
+            { title: 'Other Resources', icon: 'fa-archive', items: oth_b },
+        ];
+
+        let detailsHTML = `
+            <div class="course-header">
+                <h3>${name}</h3>
+                <p><strong>Course Code:</strong> ${code} | <strong>Semester:</strong> ${getSemesterTitle(semester)}</p>
+            </div>
+            ${resourceSections.map(section => createResourceSectionHTML(section.title, section.icon, section.items)).join('')}`;
+
+        if (mat_b) {
+            detailsHTML += `
+                <div class="resource-section">
+                    <h4><i class="fas fa-folder"></i> Course Materials (OneDrive)</h4>
+                    <div class="resource-links">
+                        <a href="${mat_b}" target="_blank" class="resource-link"><i class="fab fa-microsoft"></i> OneDrive Material</a>
+                    </div>
+                </div>`;
+        }
+
+        DOM.courseDetailsContent.innerHTML = detailsHTML;
+        showView(config.views.DETAILS, true);
+    };
+
+    const renderSearchResults = (query) => {
+        if (!query) {
+            if (state.currentView === config.views.SEARCH) showView(config.views.HOME);
+            return;
+        }
+
+        const lowerCaseQuery = query.toLowerCase();
+        const results = coursesData.filter(c =>
+            c.name.toLowerCase().includes(lowerCaseQuery) ||
+            c.code.toLowerCase().includes(lowerCaseQuery)
+        );
+
+        const hasResults = results.length > 0;
+        DOM.searchResultsTitle.textContent = hasResults ? `Found ${results.length} result(s) for "${query}"` : 'Search Results';
+        DOM.searchResultsList.innerHTML = hasResults ? results.map(course => `
+            <div class="search-result-item" data-action="show-details" data-course-id="${course.id}">
+                <span class="course-name">${course.name}</span>
+                <span class="course-code">${course.code} - ${getSemesterTitle(course.semester)}</span>
+            </div>`).join('') : '';
+        DOM.noSearchResults.classList.toggle('hidden', hasResults);
+
+        showView(config.views.SEARCH, true);
+    };
+
+    // --- VIEW & NAVIGATION MANAGEMENT ---
+
+    const showView = (viewId, forceTop = false) => {
+        state.previousView = state.currentView;
+        state.currentView = viewId;
+
+        DOM.views.forEach(view => view.classList.add('hidden'));
+        document.getElementById(viewId).classList.remove('hidden');
+        
+        if (forceTop) {
+            window.scrollTo({ top: 0, behavior: 'auto' });
+        } else if (viewId === config.views.HOME && state.lastViewedSemesterId) {
+            document.getElementById(state.lastViewedSemesterId)?.scrollIntoView({ behavior: 'smooth' });
+            state.lastViewedSemesterId = null;
+        }
+    };
+    
+    // --- EVENT HANDLERS ---
+
+    /**
+     * @description A single, delegated event listener for all click actions.
+     * This is more performant than attaching listeners to each button.
+     * It reads the `data-action` attribute to decide which function to run.
+     */
+    const handleClick = (e) => {
+        const target = e.target.closest('[data-action]');
+        if (!target) return;
+
+        const { action, courseId } = target.dataset;
+
+        const actions = {
+            'show-home': () => {
+                showView(config.views.HOME, true);
+                DOM.searchInput.value = '';
+            },
+            'go-back': () => {
+                const targetView = state.previousView === config.views.SEARCH ? config.views.SEARCH : config.views.HOME;
+                showView(targetView, false);
+            },
+            'show-details': () => courseId && renderCourseDetails(courseId),
+            'scroll-top': () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+        };
+
+        actions[action]?.(); // Safely call the action if it exists
+    };
+
+    /**
+     * @description A debounced search handler to prevent firing search on every keystroke.
+     */
+    const handleSearch = (() => {
+        let timeout;
+        return (e) => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => renderSearchResults(e.target.value.trim()), config.debounceTime);
+        };
+    })();
+
+    const handleScroll = () => {
+        DOM.scrollTopBtn.classList.toggle('hidden', window.scrollY <= 300);
+    };
+
+    // --- UTILITY FUNCTIONS ---
+
+    const getSemesterTitle = (semNum) => {
+        const titles = { 11: "Depth Elective", 12: "Breadth Elective" };
+        return titles[semNum] || `Semester ${semNum}`;
+    };
+
+    // --- INITIALIZATION ---
+    
+    const bindEventListeners = () => {
+        document.addEventListener('click', handleClick);
+        DOM.searchInput.addEventListener('input', handleSearch);
+        window.addEventListener('scroll', handleScroll);
+    };
+
+    const init = () => {
+        renderImportantLinks();
+        renderHomepageCourses();
+        bindEventListeners();
+        showView(config.views.HOME, true);
+        console.log("CSE 2020 Resource App Initialized.");
+    };
+
+    return { init }; // Expose only the init function to the public scope.
+})();
+
+// ==================================================================
+// --- DATA STORE ---
+// All application data is stored here, separate from the logic.
+// To update the website, you only need to edit the arrays below.
+// ==================================================================
 const coursesData = [
-    // SEM01 M1
+ // SEM01 M1
     {
         name: `Advanced Calculus`,
         id: `sem01Modal1`,
@@ -285,7 +544,7 @@ const coursesData = [
             {
                 name: `Web_Aut_20`,
                 icon: `fa-solid fa-file-lines`,
-                link: `http://cse.iitkgp.ac.in/~aritrah/course/theory/PDS/Autumn2020/`
+                link: `http://cse.iitkgp.ac.in/~aritrah/course/theory/PDS/Autumn20/`
             },
             {
                 name: `Web_Spr_21`,
@@ -803,7 +1062,7 @@ const coursesData = [
             {
                 name: `Web_Spr_22`,
                 icon: `fa-solid fa-file-lines`,
-                link: `http://cse.iitkgp.ac.in/~abhij/course/theory/FLAT/Spring22/`
+                link: `https://cse.iitkgp.ac.in/~abhij/course/theory/FLAT/Spring22/`
             }
         ],
         not_b: [
@@ -2040,348 +2299,25 @@ const coursesData = [
     }
 ];
 
-// Global variables to keep track of current state
-let currentSemester = null;
-let currentCourse = null;
+const importantLinksData = [
+    { name: 'ERP', link: 'https://erp.iitkgp.ac.in/SSOAdministration/login.htm?sessionToken=14ADC44B03533E3B1C22E5BD4DB428A5.worker1&requestedUrl=https://erp.iitkgp.ac.in/IIT_ERP3/', title: 'Official Site for Admin work', icon: 'fa-user-cog' },
+    { name: 'CSE Moodle', link: 'https://moodlecse.iitkgp.ac.in/moodle/login/index.php', title: 'Moodle of CSE Department', icon: 'fa-chalkboard-teacher' },
+    { name: 'WBCM', link: 'https://cse.iitkgp.ac.in/~wbcm/', title: 'Web Based Course Material', icon: 'fa-globe' },
+    { name: 'KGP Moodle', link: 'http://kgpmoodlenew.iitkgp.ac.in/moodle/login/index.php', title: 'Moodle for Non-CSE Courses', icon: 'fa-chalkboard' },
+    { name: 'Question Papers', link: 'https://qp.metakgp.org/', title: 'Instant Search through Previous Years\' Question Papers', icon: 'fa-file-alt' },
+    { name: 'Professor Search', link: 'https://metakgp.github.io/mcmp/', title: 'Search for Faculty by Area of Interest', icon: 'fa-search-location' },
+    { name: 'Meta KGP', link: 'https://wiki.metakgp.org/', title: 'The community wiki for IIT Kharagpur', icon: 'fab fa-wikipedia-w' },
+    { name: 'Kronos', link: 'https://share.streamlit.io/spookbite/kronos2.0/main/app.py', title: 'Grade Distribution of Courses', icon: 'fa-chart-bar' },
+    { name: 'Library Books', link: 'https://library.iitkgp.ac.in/pages/eSearch2.1/', title: 'Ebooks by Central Library', icon: 'fa-book-open' },
+    { name: 'Clubs & Societies', link: 'https://thescholarsavenue.github.io/societytable/', title: 'Society Table by The Scholar\'s Avenue', icon: 'fa-users' },
+    { name: 'CP Calendar', link: 'https://clist.by/', title: 'Competitive Programming Calendar', icon: 'fa-calendar-alt' },
+    { name: 'C++ STL Guide', link: 'https://www.topcoder.com/thrive/articles/Power%20up%20C++%20with%20the%20Standard%20Template%20Library%20Part%20One', title: 'C++ STL Tutorial by TopCoder', icon: 'fa-code' },
+    { name: 'Abhijit Das Courses', link: 'http://cse.iitkgp.ac.in/~abhij/course/', title: 'Index of Prof. Abhijit Das Courses', icon: 'fa-folder-open' },
+    { name: 'Anubhav Jain Notes', link: 'https://drive.google.com/folderview?id=0Bx7x8HmM7p_zM3VDMURfWWdvY28&resourcekey=0-4H4yE_Kxs1Dr61KH_3fxFw', title: 'CSE Notes by Anubhav Jain', icon: 'fa-pen-alt' },
+    { name: 'CP/DSA Playlist', link: 'https://www.youtube.com/playlist?list=PLauivoElc3ggagradg8MfOZreCMmXMmJ-', title: 'CP/DSA Playlist by Luv', icon: 'fab fa-youtube' },
+    { name: 'CSES Problem Set', link: 'https://cses.fi/problemset/', title: 'CSES Problem Set', icon: 'fa-tasks' }
+];
 
-// Initialize the website when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', init);
-
-/**
- * Initializes the website by generating semester buttons and setting up search functionality.
- */
-function init() {
-    generateSemesters(); // Generate semester cards on load
-    setupSearch();       // Setup search input event listener
-    showHome();          // Display the home section initially
-}
-
-/**
- * Generates and displays semester cards on the home section.
- * It creates cards for semesters 1-10, plus "Other Depth Electives" (11) and "Other Breadth Electives" (12).
- */
-function generateSemesters() {
-    const semesterGrid = document.getElementById('semesterGrid');
-    semesterGrid.innerHTML = ''; // Clear existing content
-
-    // Loop through semesters 1 to 12 (1-10 for regular, 11 for Depth, 12 for Breadth)
-    // Note: If you only have data for a few semesters, only those will show courses.
-    // The cards for empty semesters will still appear but indicate 0 courses.
-    for (let i = 1; i <= 12; i++) {
-        const semesterCard = document.createElement('button');
-        semesterCard.className = 'semester-card';
-
-        let semesterTitle = `Semester ${i}`;
-        // Custom titles for specific semesters (as per your original script)
-        if (i === 1) semesterTitle = `Sem ${i} Phy (Aut 2020)`;
-        else if (i === 2) semesterTitle = `Sem ${i} Chem (Spr 2021)`;
-        else if (i === 3) semesterTitle += ` (Aut 2021)`;
-        else if (i === 4) semesterTitle += ` (Spr 2022)`;
-        else if (i === 5) semesterTitle += ` (Aut 2022)`;
-        else if (i === 6) semesterTitle += ` (Spr 2023)`;
-        else if (i === 7) semesterTitle += ` (Aut 2023)`;
-        else if (i === 8) semesterTitle += ` (Spr 2024)`;
-        else if (i === 9) semesterTitle += ` (Aut 2024)`;
-        else if (i === 10) semesterTitle += ` (Spr 2025)`;
-        else if (i === 11) semesterTitle = "Other Depth Electives";
-        else if (i === 12) semesterTitle = "Other Breadth Electives";
-
-        // Filter courses for the current semester
-        const coursesInSemester = coursesData.filter(course => course.semester === i);
-        const coursesCount = coursesInSemester.length;
-
-        // Get first few course names for display in the card
-        const maxCoursesToList = 8; // Display up to 8 course names
-        const courseNames = coursesInSemester.map(course => course.name);
-        const displayedCourseNames = courseNames.slice(0, maxCoursesToList).join(', ');
-        const moreCoursesIndicator = coursesCount > maxCoursesToList ? '...' : '';
-
-        // Populate the semester card with content
-        semesterCard.innerHTML = `
-            <h3>${semesterTitle}</h3>
-            <p>${coursesCount} Courses</p>
-            ${coursesCount > 0 ? `<div class="course-list">${displayedCourseNames}${moreCoursesIndicator}</div>` : ''}
-        `;
-        // Attach click event listener to show courses for that semester
-        semesterCard.onclick = () => showSemesterCourses(i);
-        semesterGrid.appendChild(semesterCard);
-    }
-}
-
-/**
- * Hides all main content sections by adding the 'hidden' class.
- */
-function hideAllSections() {
-    document.getElementById('homeSection').classList.add('hidden');
-    document.getElementById('coursesSection').classList.add('hidden');
-    document.getElementById('courseDetailsSection').classList.add('hidden');
-    document.getElementById('searchResultsSection').classList.add('hidden');
-}
-
-/**
- * Displays the courses belonging to a specific semester.
- * Hides other sections and populates the course grid.
- * @param {number} semester - The semester number to display courses for.
- */
-function showSemesterCourses(semester) {
-    hideAllSections(); // Hide all sections first
-    currentSemester = semester; // Update global currentSemester
-    currentCourse = null;   // Reset current course when changing semester
-
-    const courses = coursesData.filter(course => course.semester === semester);
-    const courseGrid = document.getElementById('courseGrid');
-    const coursesTitle = document.getElementById('coursesTitle');
-
-    // Set the title for the courses section
-    let semesterDisplayTitle = `${semester === 11 ? 'Depth Elective' : semester === 12 ? 'Breadth Elective' : `Semester ${semester}`} Courses`;
-    coursesTitle.textContent = semesterDisplayTitle;
-
-    courseGrid.innerHTML = ''; // Clear existing course cards
-
-    // Display a message if no courses are available
-    if (courses.length === 0) {
-        courseGrid.innerHTML = '<p style="text-align: center; color: var(--text-light); font-size: 1.2rem;">No courses available for this semester yet.</p>';
-    } else {
-        // Generate course cards for the selected semester
-        courses.forEach(course => {
-            const courseCard = document.createElement('div');
-            courseCard.className = 'course-card';
-            courseCard.innerHTML = `
-                <div class="course-name">${course.name}</div>
-                <div class="course-code">${course.code}</div>
-            `;
-            // Attach click event listener to show details for that course
-            // Pass only the course ID, then find the course object in showCourseDetails
-            courseCard.onclick = () => showCourseDetails(course.id);
-            courseGrid.appendChild(courseCard);
-        });
-    }
-
-    document.getElementById('coursesSection').classList.remove('hidden'); // Show the courses section
-    window.scrollTo(0, 0); // Scroll to the top of the page for better UX
-}
-
-/**
- * Displays the detailed information for a selected course.
- * Hides other sections and populates the course details content.
- * @param {string} courseId - The ID of the course to display details for.
- */
-function showCourseDetails(courseId) {
-    hideAllSections(); // Hide all sections first
-    // Find the course object by its ID in the coursesData array
-    const course = coursesData.find(c => c.id === courseId);
-
-    if (!course) {
-        console.error('Course not found with ID:', courseId);
-        showHome(); // Fallback to home if course not found
-        return;
-    }
-
-    currentCourse = course; // Update global currentCourse
-
-    const detailsContent = document.getElementById('courseDetailsContent');
-    detailsContent.innerHTML = `
-        <div class="course-details">
-            <h3>${course.name}</h3>
-            <p><strong>Course Code:</strong> ${course.code}</p>
-            <p><strong>Semester:</strong> ${course.semester === 11 ? 'Depth Elective' : course.semester === 12 ? 'Breadth Elective' : `${course.semester}`}</p>
-
-            ${course.prof_b && course.prof_b.length > 0 ? `
-            <div class="resource-section">
-                <h4><i class="fas fa-user-tie"></i> Professor(s)</h4>
-                <div class="resource-links">
-                    ${course.prof_b.map(prof => `
-                        <a href="${prof.link}" target="_blank" class="resource-link prof">
-                            <i class="fas fa-user"></i>
-                            ${prof.name}
-                        </a>
-                    `).join('')}
-                </div>
-            </div>
-            ` : ''}
-
-            ${course.vid_b && course.vid_b.length > 0 ? `
-            <div class="resource-section">
-                <h4><i class="fas fa-video"></i> Videos</h4>
-                <div class="resource-links">
-                    ${course.vid_b.map(video => `
-                        <a href="${video.link}" target="_blank" class="resource-link videos">
-                            <i class="${video.icon}"></i>
-                            ${video.name}
-                        </a>
-                    `).join('')}
-                </div>
-            </div>
-            ` : ''}
-
-            ${course.web_b && course.web_b.length > 0 ? `
-            <div class="resource-section">
-                <h4><i class="fas fa-globe"></i> Webpages</h4>
-                <div class="resource-links">
-                    ${course.web_b.map(webpage => `
-                        <a href="${webpage.link}" target="_blank" class="resource-link webpages">
-                            <i class="${webpage.icon || 'fas fa-link'}"></i>
-                            ${webpage.name}
-                        </a>
-                    `).join('')}
-                </div>
-            </div>
-            ` : ''}
-
-            ${course.not_b && course.not_b.length > 0 ? `
-            <div class="resource-section">
-                <h4><i class="fas fa-book"></i> Notes</h4>
-                <div class="resource-links">
-                    ${course.not_b.map(note => `
-                        <a href="${note.link}" target="_blank" class="resource-link notes">
-                            <i class="${note.icon}"></i>
-                            ${note.name}
-                        </a>
-                    `).join('')}
-                </div>
-            </div>
-            ` : ''}
-
-            ${course.tut_b && course.tut_b.length > 0 ? `
-            <div class="resource-section">
-                <h4><i class="fas fa-chalkboard-teacher"></i> Tutorials</h4>
-                <div class="resource-links">
-                    ${course.tut_b.map(tutorial => `
-                        <a href="${tutorial.link}" target="_blank" class="resource-link tutorials">
-                            <i class="${tutorial.icon || 'fas fa-graduation-cap'}"></i>
-                            ${tutorial.name}
-                        </a>
-                    `).join('')}
-                </div>
-            </div>
-            ` : ''}
-
-            ${course.oth_b && course.oth_b.length > 0 ? `
-            <div class="resource-section">
-                <h4><i class="fas fa-archive"></i> Other Resources</h4>
-                <div class="resource-links">
-                    ${course.oth_b.map(other => `
-                        <a href="${other.link}" target="_blank" class="resource-link others">
-                            <i class="${other.icon || 'fas fa-external-link-alt'}"></i>
-                            ${other.name}
-                        </a>
-                    `).join('')}
-                </div>
-            </div>
-            ` : ''}
-
-            ${course.mat_b ? `
-            <div class="resource-section">
-                <h4><i class="fas fa-folder"></i> Course Materials (OneDrive)</h4>
-                <div class="resource-links">
-                    <a href="${course.mat_b}" target="_blank" class="resource-link">
-                        <i class="fas fa-brands fa-google-drive"></i>
-                        OneDrive Material
-                    </a>
-                </div>
-            </div>
-            ` : ''}
-        </div>
-    `;
-
-    document.getElementById('courseDetailsSection').classList.remove('hidden'); // Show the course details section
-    window.scrollTo(0, 0); // Scroll to the top of the page for better UX
-}
-
-/**
- * Sets up the search functionality for the search input box.
- * Implements a debounce mechanism to prevent excessive search calls.
- */
-function setupSearch() {
-    const searchInput = document.getElementById('searchInput');
-    let searchTimeout;
-
-    searchInput.addEventListener('input', function() {
-        clearTimeout(searchTimeout); // Clear previous timeout
-        searchTimeout = setTimeout(() => {
-            const query = this.value.trim();
-            performSearch(query); // Perform search if query is not empty
-        }, 300); // Debounce time: 300 milliseconds
-    });
-}
-
-/**
- * Performs a search on the coursesData based on the query.
- * Matches against course name or course code (case-insensitive).
- * @param {string} query - The search query string.
- */
-function performSearch(query) {
-    const searchResultsList = document.getElementById('searchResultsList'); // Target the new list container
-    const noResultsMessage = document.getElementById('noSearchResults');
-
-    // Filter courses based on query
-    const results = coursesData.filter(course =>
-        course.name.toLowerCase().includes(query.toLowerCase()) ||
-        course.code.toLowerCase().includes(query.toLowerCase())
-    );
-
-    hideAllSections(); // Hide all sections first
-    document.getElementById('searchResultsSection').classList.remove('hidden'); // Show search results section
-    window.scrollTo(0, 0); // Scroll to top
-
-    // Display results or no results message
-    if (results.length === 0) {
-        searchResultsList.innerHTML = ''; // Clear previous results in the list container
-        noResultsMessage.classList.remove('hidden'); // Show no results message
-    } else {
-        noResultsMessage.classList.add('hidden'); // Hide no results message
-        searchResultsList.innerHTML = `
-            <p style="margin-bottom: 1rem; color: var(--text-light);">
-                Found ${results.length} course(s) for "${query}"
-            </p>
-            ${results.map(course => `
-                <div class="search-result-item" onclick="showCourseDetails('${course.id}')">
-                    <div class="course-name">${course.name}</div>
-                    <div class="course-code">${course.code} - ${course.semester === 11 ? 'Depth Elective' : course.semester === 12 ? 'Breadth Elective' : `Semester ${course.semester}`}</div>
-                </div>
-            `).join('')}
-        `;
-    }
-}
-
-// --- Navigation Functions ---
-
-/**
- * Shows the home section (semester selection) and hides all other sections.
- * Resets current semester and course.
- */
-function showHome() {
-    hideAllSections(); // Ensure all sections are hidden first
-    document.getElementById('homeSection').classList.remove('hidden');
-    clearSearchInput(); // Clear search input when navigating home
-    currentSemester = null; // Reset current semester
-    currentCourse = null;   // Reset current course
-    window.scrollTo(0, 0); // Scroll to top of the page
-}
-
-/**
- * Shows the courses for the currently selected semester.
- * If no semester is selected (e.g., direct navigation or error), it falls back to the home page.
- */
-function showCourses() {
-    if (currentSemester) {
-        showSemesterCourses(currentSemester);
-    } else {
-        showHome(); // Fallback to home if currentSemester is not set
-    }
-}
-
-/**
- * Clears the search input and navigates back to the home section.
- */
-function clearSearch() {
-    clearSearchInput();
-    showHome();
-}
-
-/**
- * Clears the text in the search input field.
- */
-function clearSearchInput() {
-    document.getElementById('searchInput').value = '';
-}
+// --- APPLICATION START ---
+// The script waits for the DOM to be fully loaded before initializing the app.
+document.addEventListener('DOMContentLoaded', resourceApp.init);
